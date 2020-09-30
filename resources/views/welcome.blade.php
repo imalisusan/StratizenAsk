@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>StratizenAsk</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -83,7 +83,6 @@
                 <div class="title m-b-md">
                     StratizenAsk
                 </div>
-
                 <div class="links">
                     <a href="https://laravel.com/docs">Posts</a>
                     <a href="https://laracasts.com">Laracasts</a>
