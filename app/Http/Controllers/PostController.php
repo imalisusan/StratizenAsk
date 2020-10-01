@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Post;
+use App\Course;
+use App\User;
+use App\Http\Requests\StorePostRequest;
+
 use Illuminate\Http\Request;
 
 class PostController extends Controller
@@ -14,7 +18,8 @@ class PostController extends Controller
      */
     public function index()
     {
-        //
+        $posts = Post::latest()->paginate(20);
+        return view('posts.index', compact('posts'))->with('i', (request()->input('page', 1) - 1) * 20);
     }
 
     /**
@@ -24,7 +29,11 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        $courses =  Course::get();
+        foreach ($courses as $course) {
+            $course->description = $course->name;
+        }
+        return view('posts.create', compact('courses'));
     }
 
     /**
@@ -33,9 +42,20 @@ class PostController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StorePostRequest $request)
     {
-        //
+        $data = $request->validated();
+
+        $post = new Post();
+        $post->title = $data["title"];
+        $post->detail = $data["detail"];
+        $post->category = $data["category"];
+        // Attach post to user
+        $post->user_id = $request->user()->id;
+        // End Attach post to user
+        $post->save();
+
+        return redirect()->route('posts.index')->with('success', 'Post created successfully.');
     }
 
     /**
@@ -46,7 +66,9 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        //
+        $author =  User::find($post->user_id);
+        
+        return view('posts.show', compact('post', 'author'));
     }
 
     /**
@@ -57,7 +79,11 @@ class PostController extends Controller
      */
     public function edit(Post $post)
     {
-        //
+        $courses =  Course::get();
+        foreach ($courses as $course) {
+            $course->description = $course->name;
+        }
+        return view('posts.edit', compact('post'), compact('courses'));
     }
 
     /**
@@ -67,9 +93,14 @@ class PostController extends Controller
      * @param  \App\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Post $post)
+    public function update(StorePostRequest $request, Post $post)
     {
-        //
+        $data = $request->validated();
+        $post->title = $data["title"];
+        $post->detail = $data["detail"];
+        $post->category = $data["category"];
+        $post->update();
+        return redirect()->route('posts.index')->with('success', 'Post updated successfully');
     }
 
     /**
@@ -80,6 +111,7 @@ class PostController extends Controller
      */
     public function destroy(Post $post)
     {
-        //
+        $post->delete();
+        return redirect()->route('posts.index')->with('success', 'Post deleted successfully');
     }
 }

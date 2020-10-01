@@ -1,6 +1,6 @@
-@extends('courses.layout')
+@extends('layouts.app')
 @section('content')
-
+    <div class="container">
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
@@ -8,7 +8,7 @@
             </div>
             <div class="pull-right">
                 <a class="btn btn-success" href="{{ route('courses.create') }}"> Create new Course</a>
-            </div>
+            </div><br>
         </div>
     </div>
     @if ($message = Session::get('success'))
@@ -38,4 +38,5 @@
         @endforeach
     </table>
     {!! $courses->links() !!}
+    </div>
 @endsection

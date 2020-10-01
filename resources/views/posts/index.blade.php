@@ -1,14 +1,11 @@
-@extends('ideas.layout')
+@extends('layouts.app')
 @section('content')
-
+    <div class="container">
     <div class="row">
         <div class="col-lg-12 margin-tb">
-            <div class="pull-left">
-                <h2>Vumbua</h2>
-            </div>
             <div class="pull-right">
-                <a class="btn btn-success" href="{{ route('ideas.create') }}"> Create New Idea</a>
-            </div>
+                <a class="btn btn-success" href="{{ route('posts.create') }}"> Create New Post</a>
+            </div><br>
         </div>
     </div>
     @if ($message = Session::get('success'))
@@ -19,28 +16,20 @@
 
     <table class="table table-bordered">
         <tr>
-            <th>Idea Id</th>
             <th>Title</th>
-            <th>Details</th>
-            <th>Due Date</th>
-            <th>Manager</th>
+            <th>Detail</th>
             <th>Category</th>
-            <th>Status</th>
             <th width="280px">Action</th>
         </tr>
-        @foreach ($ideas as $idea)
+        @foreach ($posts as $post)
         <tr>
-            <td>{{ $idea->id }}</td>
-            <td>{{ $idea->title }}</td>
-            <td>{{ $idea->detail }}</td>
-            <td>{{ $idea->due_date }}</td>
-            <td>{{ $idea->manager }}</td>
-            <td>{{ $idea->category }}</td>
-            <td>{{ $idea->status }}</td>
+            <td>{{ $post->title }}</td>
+            <td>{{ $post->detail }}</td>
+            <td>{{ $post->category }}</td>
             <td>
-                <form action="{{ route('ideas.destroy',$idea->id) }}" method="POST">
-                    <a class="btn btn-info" href="{{ route('ideas.show',$idea->id) }}">Show</a>
-                    <a class="btn btn-primary" href="{{ route('ideas.edit',$idea->id) }}">Edit</a>
+                <form action="{{ route('posts.destroy',$post->id) }}" method="POST">
+                    <a class="btn btn-info" href="{{ route('posts.show',$post->id) }}">Show</a>
+                    <a class="btn btn-primary" href="{{ route('posts.edit',$post->id) }}">Edit</a>
                     @csrf
                     @method('DELETE')
                     <button type="submit" class="btn btn-danger">Delete</button>
@@ -49,5 +38,6 @@
         </tr>
         @endforeach
     </table>
-    {!! $ideas->links() !!}
+    {!! $posts->links() !!}
+    </div>
 @endsection

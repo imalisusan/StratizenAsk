@@ -52,10 +52,12 @@
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
+                                    {{ Auth::user()->username }}
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('home',Auth::user()->id) }}">Home</a>
+                                    <a class="dropdown-item" href="{{ route('posts.index',Auth::user()->id) }}">Feed</a>
                                     <a class="dropdown-item" href="{{ route('users.show',Auth::user()->id) }}">My Profile</a>
                                     <a class="dropdown-item" href="{{ route('users.edit',Auth::user()->id) }}">Edit Profile</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
