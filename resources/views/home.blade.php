@@ -7,16 +7,16 @@
         <img src="https://mymodernmet.com/wp/wp-content/uploads/2019/09/100k-ai-faces-7.jpg" class="rounded-circle" style="height:200px;width:200px" alt="">
         </div>
         <div class="col-9 pt-5">
-            <div class="pt-3"><h1>Hedda Shaffer</h1></div>
+            <div class="pt-3"><h1>{{ Auth::user()->name }}</h1></div>
             <div class="d-flex h6">
-                <div class="pr-5">Student</div>
+                <div class="pr-5">{{ Auth::user()->role }}</div>
                 <div class="pr-5"><strong class="pr-1">30</strong>posts</div>
                 <div><strong class="pr-1">200</strong>friends</div>
             </div>
-            <div class="pt-2 font-weight-bold">Bachelor of Informatics in Computer Science</div>
-            <div>Throughout that time, I’ve worked remotely for a number of exciting startups and established companies</div>
-            <div><a href="hedda.co.ke">hedda.co.ke</a></div>
-            <button type="button" class="btn btn-primary">Edit Profile</button>
+            <div class="pt-2 font-weight-bold">Course: {{ Auth::user()->course }}</div>
+            <div>About: {{ Auth::user()->about }}</div>
+            <div>Website URL: <a href="hedda.co.ke">{{ Auth::user()->website }}</a></div>
+            <a class="btn btn-primary" href="{{ route('users.edit', Auth::user()->id) }}"> Edit Profile</a>
         </div>
     </div>
 

@@ -21,10 +21,11 @@ class CreatePostsTable extends Migration
     public function up()
     {
         Schema::create($this->tableName, function (Blueprint $table) {
-            $table->engine = 'InnoDB';
-            $table->string('description')->nullable();
-            $table->dateTime('closed_at')->nullable();
-            $table->nullableTimestamps();
+            $table->bigIncrements('id');
+            $table->string('title');
+            $table->text('description');
+            $table->dateTime('closed_on')->nullable();
+            $table->timestamps();
         });
     }
 
