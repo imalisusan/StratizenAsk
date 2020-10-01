@@ -17,48 +17,20 @@
 
 @section('content')
     <div class="container">
-    <div class="row">
-        <div class="col-lg-12 margin-tb">
-            <div class="pull-left">
-                <h2> Post Details</h2>
-            </div>
-           
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            
-                <div class="form-group">
-                    <strong>Title:</strong>
-                    {{ $post->title }}
-                    <strong>Author:</strong>
-                    {{ $author->name }}
+    <div class="card" style="width: 100%;">
+                <div class="card-body">
+                    <h5 class="font-weight-bold mb-3">Title: {{ $post->title }}</h5>
+                    <p class="mb-0">Description: {{ $post->detail }}</p>
+                    <p class="mb-0">Category: {{ $post->category }}</p>
+                    <p class="mb-0">Author: {{  $author->name  }} </p>
                 </div>
-            
+                <div class="card-body">
+                    <a class="card-link" href="{{ route('posts.edit',$post->id) }}">Edit</a>
+                    <a href="{{ route('posts.index') }}" class="card-link">Back</a>
+                </div>
+        </div><br>
+
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-12">
-        </div> 
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Details:</strong>
-                {{ $post->detail }}
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Category:</strong>
-                {{ $post->category }}
-            </div>
-        </div>  
-    </div>
-    <br>
-    <div>
-        </div>
-      
-        <div class="pull-left">
-                <a class="btn btn-primary" href="{{ route('posts.index') }}"> Back</a>
-        </div>
-    </div>
 @endsection
 </body>
 </html>

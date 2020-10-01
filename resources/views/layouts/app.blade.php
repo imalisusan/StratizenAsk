@@ -58,7 +58,7 @@
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('home',Auth::user()->id) }}">Home</a>
                                     <a class="dropdown-item" href="{{ route('posts.index',Auth::user()->id) }}">Feed</a>
-                                    <a class="dropdown-item" href="{{ route('users.show',Auth::user()->id) }}">My Profile</a>
+                                    <a class="dropdown-item" href="{{ route('home',Auth::user()->id) }}">My Profile</a>
                                     <a class="dropdown-item" href="{{ route('users.edit',Auth::user()->id) }}">Edit Profile</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();

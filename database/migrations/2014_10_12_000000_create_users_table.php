@@ -20,6 +20,7 @@ class CreateUsersTable extends Migration
             $table->string('username')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->string('avatar')->nullable();
             $table->string('phone')->nullable();
             $table->enum('role', ['Student', 'Lecturer'])->default('Student');
             $table->string('course')->nullable();

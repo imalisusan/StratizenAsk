@@ -30,4 +30,5 @@ class HomeController extends Controller
         $posts =  Post::findMany($user_id);
         return view('home', compact('posts'));
     }
+    
 }
