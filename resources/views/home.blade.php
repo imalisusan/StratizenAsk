@@ -7,29 +7,38 @@
         <img src="https://mymodernmet.com/wp/wp-content/uploads/2019/09/100k-ai-faces-7.jpg" class="rounded-circle" style="height:200px;width:200px" alt="">
         </div>
         <div class="col-9 pt-5">
-            <div class="pt-3"><h1>Hedda Shaffer</h1></div>
+            <div class="pt-3 d-flex justify-content-between">
+                <h1>{{ Auth::user()->name }}</h1>
+                <a class="font-weight-bold" href="{{ route('posts.create') }}">Create New Post</a>
+            </div>
             <div class="d-flex h6">
-                <div class="pr-5">Student</div>
+                <div class="pr-5">{{ Auth::user()->role }}</div>
                 <div class="pr-5"><strong class="pr-1">30</strong>posts</div>
                 <div><strong class="pr-1">200</strong>friends</div>
             </div>
-            <div class="pt-2 font-weight-bold">Bachelor of Informatics in Computer Science</div>
-            <div>Throughout that time, I’ve worked remotely for a number of exciting startups and established companies</div>
-            <div><a href="hedda.co.ke">hedda.co.ke</a></div>
-            <button type="button" class="btn btn-primary">Edit Profile</button>
+            <div class="pt-2 font-weight-bold">Course: {{ Auth::user()->course }}</div>
+            <div>About: {{ Auth::user()->about }}</div>
+            <div>Website URL: <a href="imali.frog.co.ke">{{ Auth::user()->website }}</a></div>
+            <a class="btn btn-primary" href="{{ route('users.edit', Auth::user()->id) }}"> Edit Profile</a>
         </div>
     </div>
 
     <div class="row pt-5">
-        <div class="col-4">
-            <img class="w-100" style="height:250px" src="https://149351115.v2.pressablecdn.com/wp-content/uploads/2020/02/iStock-1163542789.jpg" alt="">
-        </div>
-        <div class="col-4">
-            <img class="w-100" style="height:250px" src="https://miro.medium.com/max/1950/0*cJ8opIdwPZiixMjm" alt="">
-        </div>
-        <div class="col-4">
-            <img class="w-100" style="height:250px" src="https://hackernoon.com/hn-images/1*9npNPVH7iNJ64Koq7EcW5A.jpeg" alt="">
-        </div>
+    @foreach($posts as $post)
+            <div class="col-4">
+                <div class="card" style="width: 100%;">
+                    <div class="card-body">
+                        <h5 class="font-weight-bold mb-3">Title: {{ $post->title }}</h5>
+                        <p class="mb-0">Description: {{ $post->detail }}</p>
+                        <p class="mb-0">Category: {{ $post->category }}</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="{{ route('posts.show',$post->id) }}" class="card-link">View</a>
+                        <a class="card-link" href="{{ route('posts.edit',$post->id) }}">Edit</a>
+                    </div>
+                </div><br>
+            </div>
+    @endforeach
     </div>
 </div>
 @endsection
