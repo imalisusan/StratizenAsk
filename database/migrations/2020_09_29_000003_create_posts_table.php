@@ -24,7 +24,7 @@ class CreatePostsTable extends Migration
             $table->bigIncrements('id');
             $table->bigInteger('user_id');
             $table->string('title');
-            $table->string('detail');
+            $table->text('detail');
             $table->string('category');
             $table->dateTime('closed_on')->nullable();
             $table->timestamps();

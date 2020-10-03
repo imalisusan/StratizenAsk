@@ -75,7 +75,7 @@ class RegisterController extends Controller
         if(request()->hasFile('avatar'))
         {
             $avatar = request()->file('avatar')->getClientOriginalName();
-            request()->file('avatar')->storeAs('avatars', $user->id.'/'.$avatar, '');
+            request()->file('avatar')->storeAs('public/uploads/avatars', $user->id.'/'.$avatar, '');
             $user->update(['avatar' => $avatar]);
         }
         

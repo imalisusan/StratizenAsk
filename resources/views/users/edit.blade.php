@@ -6,11 +6,10 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Edit Account Details</h2>
+                <h2>Edit Profile</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('users.show', $user->id) }}"> View Profile</a>&nbsp &nbsp
-                <a class="btn btn-primary" href="{{ route('users.index') }}"> Back</a>
+                <a class="" href="{{ route('profile',Auth::user()->id) }}"> Back</a>
             </div><br>
         </div>
     </div>
@@ -68,7 +67,7 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Website URL:</strong>
-                    <input type="text" class="form-control"  name="website" placeholder="Phone Number" value="{{ $user->website }}">
+                    <input type="text" class="form-control"  name="website" placeholder="Website URL" value="{{ $user->website }}">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">

@@ -20,11 +20,11 @@ class CreateUsersTable extends Migration
             $table->string('username')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->string('avatar')->nullable();
+            $table->string('avatar')->nullable()->default('avatar.png');
             $table->string('phone')->nullable();
             $table->enum('role', ['Student', 'Lecturer'])->default('Student');
             $table->string('course')->nullable();
-            $table->string('about')->nullable();
+            $table->text('about')->nullable();
             $table->string('website')->nullable();
             $table->rememberToken();
             $table->timestamps();

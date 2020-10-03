@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Post;
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
@@ -26,8 +27,14 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $user_id = Auth::user()->id;
-        $posts =  Post::findMany($user_id);
+        $posts = Post::latest()->paginate(20);
+        return view('posts.index', compact('posts'))->with('i', (request()->input('page', 1) - 1) * 20);
+    }
+
+    public function profile()
+    {
+        $author_id = Auth::user()->id;
+        $posts = DB::table('posts')->where('user_id', "=", $author_id)->get();
         return view('home', compact('posts'));
     }
     
