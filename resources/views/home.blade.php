@@ -13,7 +13,7 @@
             </div>
             <div class="d-flex h6">
                 <div class="pr-5">{{ Auth::user()->role }}</div>
-                <div class="pr-5"><strong class="pr-1">30</strong>posts</div>
+                <div class="pr-5"><strong class="pr-1">{{ Auth::user()->posts->count() }}</strong>posts</div>
                 <div><strong class="pr-1">200</strong>friends</div>
             </div>
             <div class="pt-2 font-weight-bold">Course: {{ Auth::user()->course }}</div>
