@@ -24,10 +24,14 @@
                     <p class="mb-0">Category: {{ $post->category }}</p>
                     <p class="mb-0">Author: {{  $author->name  }} </p>
                 </div>
-                <div class="card-body">
-                    <a class="card-link" href="{{ route('posts.edit',$post->id) }}">Edit</a>
-                    <a class="card-link" href="{{ route('posts.destroy',$post->id) }}">Delete</a>
-                    <a href="{{ route('posts.index') }}" class="card-link">Back</a>
+                <div class="card-body" >
+                    <form action="{{ route('posts.destroy',$post->id) }}" method="POST">
+                    <a class="card-link" href="{{ route('posts.edit',$post->id) }}"style="color: #4B94FD;">Edit</a>
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit" class="btn card-link" style="color: #4B94FD;">Delete</button>
+                    <a href="{{ route('posts.index') }}" class="card-link" style="color: #4B94FD;">Back</a>
+                    </form>
                 </div>
         </div><br>
 
