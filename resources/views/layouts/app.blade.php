@@ -23,7 +23,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand d-flex" href="{{ url('/') }}">
+                <a class="navbar-brand d-flex" href="{{ route('posts.index') }}">
                 <div><img src="uploads/avatars/logo.png" style="height:40px; border-right: 1px solid #333;" class="pr-3" a></div>
                     <div class="pl-3 pt-2" style="color:#000;">{{ config('app.name', 'StratizenAsk') }}</div>
                 </a>
@@ -53,7 +53,7 @@
                             <li class="nav-item dropdown">
                             
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle h6 pt-2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre style="color:#000">
-                                <img src="{{ Storage::url('uploads/avatars/'. Auth::user()->id . '/' . Auth::user()->avatar . '') }}" class="rounded-circle" style="height:30px;width:30px" alt="">
+                                <img src="{{ Storage::url('uploads/avatars/'. Auth::user()->id . '/' . Auth::user()->avatar . '') }}" class="rounded-circle" style="height:30px;width:30px" alt=""  onerror="this.src='uploads/avatars/avatar.png';">
                                     {{ Auth::user()->username }}
                                 </a>
 

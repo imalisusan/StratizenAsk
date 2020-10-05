@@ -26,6 +26,7 @@
                 </div>
                 <div class="card-body">
                     <a class="card-link" href="{{ route('posts.edit',$post->id) }}">Edit</a>
+                    <a class="card-link" href="{{ route('posts.destroy',$post->id) }}">Delete</a>
                     <a href="{{ route('posts.index') }}" class="card-link">Back</a>
                 </div>
         </div><br>
