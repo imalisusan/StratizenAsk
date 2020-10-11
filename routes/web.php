@@ -28,3 +28,7 @@ Route::resource('posts', 'PostController');
 Route::resource('users', 'UserController'); 
 
 Route::resource('courses', 'CourseController'); 
+
+Route::resource('categories', 'CategoryController'); 
+
+Route::get('/search', 'CategoryController@search')->name('search');

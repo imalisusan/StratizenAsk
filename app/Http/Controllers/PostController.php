@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Post;
 use App\Course;
 use App\User;
+use App\Category;
+
 use App\Http\Requests\StorePostRequest;
 
 use Illuminate\Http\Request;
@@ -30,10 +32,11 @@ class PostController extends Controller
     public function create()
     {
         $courses =  Course::get();
+        $tags = Category::get();
         foreach ($courses as $course) {
             $course->description = $course->name;
         }
-        return view('posts.create', compact('courses'));
+        return view('posts.create', compact('courses','tags'));
     }
 
     /**
@@ -54,6 +57,16 @@ class PostController extends Controller
         $post->user_id = $request->user()->id;
         // End Attach post to user
         $post->save();
+
+        //for the pivot table
+        $tag=$request->input('tag');
+        $categories=Category::where('name','like',"$tag")->get();
+        
+        foreach($categories as $category){
+
+            $category_id=$category->id;
+        }
+        $post->category()->attach(1,array('category_id'=>$category_id));
 
         return redirect()->route('posts.index')->with('success', 'Post created successfully.');
     }

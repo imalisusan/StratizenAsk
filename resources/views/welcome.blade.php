@@ -74,9 +74,11 @@
                     StratizenAsk
                 </div>
                 <div class="links">
-                    <a href="{{ route('posts.index') }}"></a> Posts</a>
-                    <a href="{{ route('courses.index') }}"></a> Courses</a>
+                    <a href="{{ route('posts.index') }}">Posts</a>
+                    <a href="{{ route('courses.index') }}">Courses</a>
                     <a href="{{ route('posts.index') }}">Admin Panel</a>
+                    <a href="{{ route('categories.index') }}">Categories</a>
+
                 </div>
             </div>
         </div>
