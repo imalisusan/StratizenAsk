@@ -16,6 +16,12 @@ class UserController extends Controller
         $this->middleware('auth');
     }
 
+    public function index()
+    {
+        $users = User::latest()->paginate(20);
+        return view('users.index', compact('users'))->with('i', (request()->input('page', 1) - 1) * 20);
+    }
+
     public function edit(User $user)
     {   
         $courses =  Course::get();
@@ -39,8 +45,15 @@ class UserController extends Controller
         $user->update();
         return back();
     }
+
     public function show(User $user)
     {
         return view('users.show', compact('user'));
+    }
+
+    public function destroy(User $user)
+    {
+        $user->delete();
+        return redirect()->route('users.index')->with('success', 'User deleted successfully');
     }
 }

@@ -62,6 +62,9 @@
                                     <a class="dropdown-item" href="{{ route('posts.index',Auth::user()->id) }}">Feed</a>
                                     <a class="dropdown-item" href="{{ route('profile',Auth::user()->id) }}">My Profile</a>
                                     <a class="dropdown-item" href="{{ route('users.edit',Auth::user()->id) }}">Edit Profile</a>
+                                    @role('administrator')
+                                    <a class="dropdown-item" href="{{ route('laratrust.roles-assignment.index') }}">Admin Panel</a>
+                                    @endrole
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">

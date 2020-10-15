@@ -35,6 +35,9 @@
                     <div class="card-body">
                         <a href="{{ route('posts.show',$post->id) }}" class="card-link">View</a>
                         <a class="card-link" href="{{ route('posts.edit',$post->id) }}">Edit</a>
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="btn card-link" style="color: #4B94FD;">Delete</button>
                     </div>
                 </div><br>
             </div>
