@@ -42,6 +42,7 @@
                             @endrole
                         @endif
                     @endguest
+
                     <a href="{{ route('posts.index') }}" class="card-link" style="color: #4B94FD;">Back</a>
                     </form>
                 </div>
