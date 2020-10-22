@@ -6,8 +6,10 @@ use App\Post;
 use App\Course;
 use App\User;
 use App\Http\Requests\StorePostRequest;
-
+use App\Http\Requests\UpdatePostRequest;
+use App\Http\Requests\UpdatePostStatusRequest;
 use Illuminate\Http\Request;
+use Carbon\Carbon;
 
 class PostController extends Controller
 {
@@ -55,7 +57,7 @@ class PostController extends Controller
         // End Attach post to user
         $post->save();
 
-        return redirect()->route('posts.index')->with('success', 'Post created successfully.');
+        return redirect()->route('home')->with('success', 'Post created successfully. Currently awaiting for publishing');
     }
 
     /**
@@ -83,7 +85,8 @@ class PostController extends Controller
         foreach ($courses as $course) {
             $course->description = $course->name;
         }
-        return view('posts.edit', compact('post'), compact('courses'));
+        $author =  User::find($post->user_id);
+        return view('posts.edit', compact('post', 'author'), compact('courses'));
     }
 
     /**
@@ -100,7 +103,7 @@ class PostController extends Controller
         $post->detail = $data["detail"];
         $post->category = $data["category"];
         $post->update();
-        return redirect()->route('posts.index')->with('success', 'Post updated successfully');
+        return redirect()->route('home')->with('success', 'Post updated successfully');
     }
 
     /**
@@ -112,6 +115,27 @@ class PostController extends Controller
     public function destroy(Post $post)
     {
         $post->delete();
-        return redirect()->route('posts.index')->with('success', 'Post deleted successfully');
+        return redirect()->route('profile')->with('success', 'Post deleted successfully');
+    }
+
+    public function editStatus(UpdatePostRequest $request, Post $post)
+    {
+        $data = $request->validated();
+        $post->title = $data["title"];
+        $post->detail = $data["detail"];
+        $post->category = $data["category"];
+        $post->status = $data["status"];
+        $post->published_on = Carbon::now();
+        $post->update();
+        return redirect()->route('home')->with('success', 'Post updated and published successfully');
+    }
+
+    public function publish(UpdatePostStatusRequest $request, Post $post)
+    {
+        $data = $request->validated();
+        $post->status = $data["status"];
+        $post->published_on = Carbon::now();
+        $post->update();
+        return redirect()->route('home')->with('success', 'Post published successfully');
     }
 }
