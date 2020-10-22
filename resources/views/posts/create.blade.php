@@ -8,7 +8,7 @@
             <h2>Add New Post</h2>
         </div>
         <div class="pull-right">
-            <a class="btn btn-primary" href="{{ route('posts.index') }}"> Back</a>
+            <a class="btn btn-primary" href="{{ route('home') }}"> Back</a>
         </div>
     </div>
 </div>
@@ -59,3 +59,4 @@
 </form>
     </div>
 @endsection
+
