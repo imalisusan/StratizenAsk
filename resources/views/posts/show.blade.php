@@ -20,9 +20,12 @@
     <div class="card" style="width: 100%;">
                 <div class="card-body">
                     <h5 class="font-weight-bold mb-3">Title: {{ $post->title }}</h5>
-                    <p class="mb-0">Description: {{ $post->detail }}</p>
+                    <p class="mb-0" style="margin-left:78%;">Published on: {{ $post->published_on }}</p>
+                    <p class="mb-0 pb-3" style="margin-left:78%;">Author: {{  $author->name  }} </p>
                     <p class="mb-0">Category: {{ $post->category }}</p>
-                    <p class="mb-0">Author: {{  $author->name  }} </p>
+                    <p class="mb-0">Description: {{ $post->detail }}</p>
+                    
+                    
                 </div>
                 <div class="card-body" >
                     <form action="{{ route('posts.destroy',$post->id) }}" method="POST">
@@ -31,18 +34,22 @@
                     @else
                         @if (Auth::user()->id == $author->id)
                             <a class="card-link" href="{{ route('posts.edit',$post->id) }}"style="color: #4B94FD;">Edit</a>
+                            @role('administrator')
+                                    <a class="card-link" href="{{ route('posts.edit',$post->id) }}"style="color: #4B94FD;">Publish</a>
+                            @endrole
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit" class="btn card-link" style="color: #4B94FD;">Delete</button>
                         @else
                             @role('administrator')
+                                    <a class="card-link" href="{{ route('posts.edit',$post->id) }}"style="color: #4B94FD;">Publish</a>
                                     @csrf
                                     @method('DELETE')
                                     <button type="submit" class="btn card-link" style="color: #4B94FD;">Delete</button>
                             @endrole
                         @endif
                     @endguest
-                    <a href="{{ route('posts.index') }}" class="card-link" style="color: #4B94FD;">Back</a>
+                    <a href="{{ route('home') }}" class="card-link" style="color: #4B94FD;">Back</a>
                     </form>
                 </div>
         </div><br>
