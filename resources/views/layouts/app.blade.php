@@ -23,7 +23,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand d-flex" href="{{ route('home') }}">
+                <a class="navbar-brand d-flex" href="{{ route('posts.index') }}">
                 <div><img src="uploads/avatars/logo.png" style="height:40px; border-right: 1px solid #333;" class="pr-3" a></div>
                     <div class="pl-3 pt-2" style="color:#000;">{{ config('app.name', 'StratizenAsk') }}</div>
                 </a>
@@ -59,14 +59,12 @@
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('welcome',Auth::user()->id) }}">Home</a>
-                                    <a class="dropdown-item" href="{{ route('home',Auth::user()->id) }}">Feed</a>
+                                    <a class="dropdown-item" href="{{ route('posts.index',Auth::user()->id) }}">Feed</a>
                                     <a class="dropdown-item" href="{{ route('profile',Auth::user()->id) }}">My Profile</a>
                                     <a class="dropdown-item" href="{{ route('users.edit',Auth::user()->id) }}">Edit Profile</a>
                                     @role('administrator')
                                     <a class="dropdown-item" href="{{ route('laratrust.roles-assignment.index') }}">Admin Panel</a>
-                                    <a class="dropdown-item" href="{{ route('pending') }}">Pending Posts</a>
                                     @endrole
-                                    <a class="dropdown-item" href="{{ route('faq',Auth::user()->id) }}">FAQs</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">

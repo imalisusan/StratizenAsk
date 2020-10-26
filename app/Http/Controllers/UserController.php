@@ -43,7 +43,7 @@ class UserController extends Controller
         $user->website = $data["website"];
         $user->password = bcrypt($data["password"]);
         $user->update();
-        return redirect()->route('profile')->with('success', 'Profile details updated successfully');
+        return back();
     }
 
     public function show(User $user)

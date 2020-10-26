@@ -26,8 +26,6 @@ class CreatePostsTable extends Migration
             $table->string('title');
             $table->text('detail');
             $table->string('category');
-            $table->enum('status', ['Pending', 'Published', 'Closed'])->default('Pending');
-            $table->dateTime('published_on')->nullable();
             $table->dateTime('closed_on')->nullable();
             $table->timestamps();
         });
