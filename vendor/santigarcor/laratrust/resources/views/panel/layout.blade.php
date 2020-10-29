@@ -32,30 +32,30 @@
             <!-- Right Side Of Navbar -->
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                  <a href="{{config('laratrust.panel.go_back_route')}}" class="nav-link pt-3" style="color: #000; font-size:16px;">← Go Back</a>
+                  <a href="{{config('laratrust.panel.go_back_route')}}" class="nav-link pt-3 pl-4" style="color: #000; font-size:16px;">← Go Back</a>
               </li>
               <li class="nav-item">
-                <a href="{{ route('laratrust.roles-assignment.index') }}" class="nav-link pt-3" style="color: #000; font-size:16px;">
+                <a href="{{ route('laratrust.roles-assignment.index') }}" class="nav-link pt-3 pl-4" style="color: #000; font-size:16px;">
                   Roles & Permissions Assignment
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{route('laratrust.roles.index')}}" class="nav-link pt-3" style="color: #000; font-size:16px;">
+                <a href="{{route('laratrust.roles.index')}}" class="nav-link pt-3 pl-4" style="color: #000; font-size:16px;">
                   Roles
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ route('laratrust.permissions.index') }}" class="nav-link pt-3" style="color: #000; font-size:16px;">
+                <a href="{{ route('laratrust.permissions.index') }}" class="nav-link pt-3 pl-4" style="color: #000; font-size:16px;">
                   Permissions
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{route('users.index')}}" class="nav-link pt-3" style="color: #000; font-size:16px;">
+                <a href="{{route('users.index')}}" class="nav-link pt-3 pl-4" style="color: #000; font-size:16px;">
                   Users
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{route('courses.index')}}" class="nav-link pt-3" style="color: #000; font-size:16px;">
+                <a href="{{route('courses.index')}}" class="nav-link pt-3 pl-4" style="color: #000; font-size:16px;">
                   Courses
                 </a>
               </li>
