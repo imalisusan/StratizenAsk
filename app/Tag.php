@@ -8,7 +8,7 @@ use Laravel\Scout\Searchable;
 class Tag extends Model
 {
     use Searchable;
-    public function post()
+    public function posts()
     {
         return $this->belongsToMany(Post::class);
     }
