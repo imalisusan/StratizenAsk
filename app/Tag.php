@@ -5,7 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use Laravel\Scout\Searchable;
 
-class Category extends Model
+class Tag extends Model
 {
     use Searchable;
     public function post()

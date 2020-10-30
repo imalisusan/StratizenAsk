@@ -3,15 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Category;
+use App\Tag;
 
-class CategoryController extends Controller
+class TagController extends Controller
 {
     public function index()
     {
-        $categories=Category::all();
-        $title='Categories';
-        return view('categories.index')->with('categories',$categories);
+        $tags=Tag::all();
+        $title='Tags';
+        return view('tags.index')->with('tags',$tags);
     }
 
     public function create()
@@ -25,15 +25,15 @@ class CategoryController extends Controller
     }
 
     public function show($id)
-    {
-        return Category::find($id);
+    {   
+        $tag=Tag::where('id',$id)->get();
     }
 
     public function search(Request $request)
     {
         $query=$request->input('query');
-        $categories = Category::where('name','like',"%$query%")->get(); 
-        return view('categories.searchresults')->with('categories',$categories);
+        $tags = Tag::where('name','like',"%$query%")->get(); 
+        return view('tags.searchresults')->with('tags',$tags);
     }
 
     public function edit($id)

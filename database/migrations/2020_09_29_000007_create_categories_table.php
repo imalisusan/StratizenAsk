@@ -26,6 +26,13 @@ class CreateCategoriesTable extends Migration
             $table->string('name', 45)->nullable();
             $table->nullableTimestamps();
         });
+        Schema::create('category_post', function (Blueprint $table) {
+            $table->engine = 'InnoDB';
+            $table->integer('post_id')->nullable();
+            $table->integer('category_id')->nullable();
+            $table->primary(['post_id','category_id']);
+        });
+
     }
 
     /**
@@ -36,5 +43,7 @@ class CreateCategoriesTable extends Migration
      public function down()
      {
        Schema::dropIfExists($this->tableName);
+       Schema::dropIfExists('category_post');
+
      }
 }

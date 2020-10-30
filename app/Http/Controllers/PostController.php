@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Post;
 use App\Course;
 use App\User;
-use App\Category;
+use App\Tag;
 
 use App\Http\Requests\StorePostRequest;
 
@@ -32,7 +32,7 @@ class PostController extends Controller
     public function create()
     {
         $courses =  Course::get();
-        $tags = Category::get();
+        $tags = Tag::get();
         foreach ($courses as $course) {
             $course->description = $course->name;
         }
@@ -59,14 +59,14 @@ class PostController extends Controller
         $post->save();
 
         //for the pivot table
-        $tag=$request->input('tag');
-        $categories=Category::where('name','like',"$tag")->get();
+        $seltag=$request->input('tag');
+        $tags=Tag::where('name','like',"$seltag")->get();
         
-        foreach($categories as $category){
+        foreach($tags as $tag){
 
-            $category_id=$category->id;
+            $tag_id=$tag->id;
         }
-        $post->category()->attach(1,array('category_id'=>$category_id));
+        $post->tag()->attach(1,array('tag_id'=>$tag_id));
 
         return redirect()->route('posts.index')->with('success', 'Post created successfully.');
     }
@@ -93,10 +93,11 @@ class PostController extends Controller
     public function edit(Post $post)
     {
         $courses =  Course::get();
+        $tags = Tag::get();
         foreach ($courses as $course) {
             $course->description = $course->name;
         }
-        return view('posts.edit', compact('post'), compact('courses'));
+        return view('posts.edit', compact('post'), compact('courses','tags'));
     }
 
     /**

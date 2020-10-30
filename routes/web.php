@@ -29,6 +29,8 @@ Route::resource('users', 'UserController');
 
 Route::resource('courses', 'CourseController'); 
 
-Route::resource('categories', 'CategoryController'); 
+Route::resource('tags', 'TagController'); 
 
-Route::get('/search', 'CategoryController@search')->name('search');
+Route::get('/search', 'TagController@search')->name('search');
+
+Route::get('/show', 'TagController@show')->name('show');

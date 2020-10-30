@@ -21,7 +21,7 @@
                 <div class="card-body">
                     <h5 class="font-weight-bold mb-3">Title: {{ $post->title }}</h5>
                     <p class="mb-0">Description: {{ $post->detail }}</p>
-                    <p class="mb-0">Category: {{ $post->category }}</p>
+                    <p class="mb-0">Faculty: {{ $post->category }}</p>
                     <p class="mb-0">Author: {{  $author->name  }} </p>
                 </div>
                 <div class="card-body" >
@@ -34,7 +34,6 @@
                     </form>
                 </div>
         </div><br>
-
         </div>
 @endsection
 </body>

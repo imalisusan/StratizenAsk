@@ -77,7 +77,7 @@
                     <a href="{{ route('posts.index') }}">Posts</a>
                     <a href="{{ route('courses.index') }}">Courses</a>
                     <a href="{{ route('posts.index') }}">Admin Panel</a>
-                    <a href="{{ route('categories.index') }}">Categories</a>
+                    <a href="{{ route('tags.index') }}">Tags</a>
 
                 </div>
             </div>

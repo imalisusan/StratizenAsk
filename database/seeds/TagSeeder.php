@@ -1,8 +1,8 @@
 <?php
-use App\Category;
+use App\Tag;
 use Illuminate\Database\Seeder;
 
-class CategorySeeder extends Seeder
+class TagSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,7 +11,7 @@ class CategorySeeder extends Seeder
      */
     public function run()
     {
-        $categories=[
+        $tags=[
             [
                 'name'=>'computerscience',
                 'description'=>'For questions regarding the study of computers and computational systems',
@@ -99,11 +99,11 @@ class CategorySeeder extends Seeder
             ]
             
         ];
-        foreach($categories as $category)
+        foreach($tags as $tag)
           {
-              Category::create([
-               'name' => $category['name'],
-               'description' => $category['description'],
+              Tag::create([
+               'name' => $tag['name'],
+               'description' => $tag['description'],
              ]);
            }
     }
