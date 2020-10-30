@@ -108,3 +108,4 @@ class TagSeeder extends Seeder
            }
     }
 }
+
