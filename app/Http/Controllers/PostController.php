@@ -66,7 +66,7 @@ class PostController extends Controller
 
             $tag_id=$tag->id;
         }
-        $post->tag()->attach(1,array('tag_id'=>$tag_id));
+        $post->tags()->attach(1,array('tag_id'=>$tag_id));
 
         return redirect()->route('posts.index')->with('success', 'Post created successfully.');
     }
