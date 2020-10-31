@@ -16,4 +16,8 @@ class Tag extends Model
     {
         return 'name';
     }
+    public function searchableAs()
+    {
+        return 'name';
+    }
 }

@@ -23,8 +23,16 @@
                     <p class="mb-0">Description: {{ $post->detail }}</p>
                     <p class="mb-0">Faculty: {{ $post->category }}</p>
                     <p class="mb-0">Author: {{  $author->name  }} </p>
-                </div>
-                <div class="card-body" >
+
+                    @if (count($post->tags)>0)
+                        <p class="mb-0">Tags:</p>
+                        <ul>
+                            @foreach ($post->tags as $tag)
+                                <li><a href="{{ route ('show',['tag' => $tag] ) }}">{{$tag->name}}</a></li>
+                            @endforeach
+                        </ul>
+                    @endif
+
                     <form action="{{ route('posts.destroy',$post->id) }}" method="POST">
                     <a class="card-link" href="{{ route('posts.edit',$post->id) }}"style="color: #4B94FD;">Edit</a>
                     @csrf

@@ -43,6 +43,9 @@
 *::after {
   box-sizing: border-box;
 }
+.ais-SearchBox { 
+  margin: 1em 0; 
+}
 
 html {
   font-family: sans-serif;
