@@ -14,11 +14,11 @@
       @foreach ($tags as $tag)
             <div class="col-3 card-group pb-2 mt-2">
                   <div class="card-body border">
-                  <h3 class="title"><a href="/tags/{{$tag->name}}">{{$tag->name}}</a></h3>
+                  <h3 class="title"><a href="{{ route ('show',['tag' => $tag] ) }}">{{$tag->name}}</a></h3>
                         <p>{{$tag->description}}</p>
                   </div>
             </div>
-      @endforeach
+      @endforeach 
      @else
             <p>Nothing Found</p>
       @endif

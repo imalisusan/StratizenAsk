@@ -33,4 +33,6 @@ Route::resource('tags', 'TagController');
 
 Route::get('/search', 'TagController@search')->name('search');
 
-Route::get('/show', 'TagController@show')->name('show');
+//Route::get('/show', 'TagController@show')->name('show');
+
+Route::get('/tags/{tag}','TagController@show')->name('show'); 
