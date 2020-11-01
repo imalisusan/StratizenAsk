@@ -34,10 +34,15 @@
                     @endif
 
                     <form action="{{ route('posts.destroy',$post->id) }}" method="POST">
+                    {{ $author->id }}
+                    {{Auth::user()->id}}
+                    
                     <a class="card-link" href="{{ route('posts.edit',$post->id) }}"style="color: #4B94FD;">Edit</a>
+                    @role('administrator')
                     @csrf
                     @method('DELETE')
                     <button type="submit" class="btn card-link" style="color: #4B94FD;">Delete</button>
+                    @endrole
                     <a href="{{ route('posts.index') }}" class="card-link" style="color: #4B94FD;">Back</a>
                     </form>
                 </div>
