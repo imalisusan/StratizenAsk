@@ -27,7 +27,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $posts = Post::latest()->paginate(20);
+        $status = "published";
+        $posts = Post::latest()->where('status', "=", $status)->paginate(20);
         return view('posts.index', compact('posts'))->with('i', (request()->input('page', 1) - 1) * 20);
     }
 

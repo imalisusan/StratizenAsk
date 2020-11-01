@@ -15,7 +15,6 @@
                 <tr>
                 <th class="th">Id</th>
                 <th class="th">Title</th>
-                <th class="th">Description</th>
                 <th class="th">Category</th>
                 <th class="th">Status</th>
                 <th class="th"></th>
@@ -29,9 +28,6 @@
                 </td>
                 <td class="td text-sm leading-5 text-gray-900">
                     {{$post->title}}
-                </td>
-                <td class="td text-sm leading-5 text-gray-900">
-                    {{$post->description}}
                 </td>
                 <td class="td text-sm leading-5 text-gray-900">
                     {{$post->category}}

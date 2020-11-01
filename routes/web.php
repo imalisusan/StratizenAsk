@@ -25,7 +25,9 @@ Route::get('profile', 'HomeController@profile')->name('profile');
 
 Route::resource('posts', 'PostController');
 
-Route::get('posts/{post}/admin-panel', 'PostController@index_admin')->name('index_admin');
+Route::get('/index_admin', 'PostController@index_admin')->name('index_admin');
+
+Route::get('/update_status/{post}', 'PostController@update_status')->name('update_status');
 
 Route::resource('/admin-panel/users', 'UserController'); 
 
