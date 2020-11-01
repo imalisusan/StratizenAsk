@@ -23,6 +23,17 @@ class PostController extends Controller
     }
 
     /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index_admin()
+    {
+        $posts = Post::latest()->paginate(20);
+        return view('posts.index_admin', compact('posts'))->with('i', (request()->input('page', 1) - 1) * 20);
+    }
+
+    /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response

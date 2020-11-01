@@ -23,7 +23,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('profile', 'HomeController@profile')->name('profile');
 
-Route::resource('posts', 'PostController'); 
+Route::resource('posts', 'PostController');
+
+Route::get('posts/{post}/admin-panel', 'PostController@index_admin')->name('index_admin');
 
 Route::resource('/admin-panel/users', 'UserController'); 
 

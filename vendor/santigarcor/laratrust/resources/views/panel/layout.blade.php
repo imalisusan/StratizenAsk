@@ -59,6 +59,11 @@
                   Courses
                 </a>
               </li>
+              <li class="nav-item">
+                <a href="{{route('index_admin')}}" class="nav-link pt-3 pl-4" style="color: #000; font-size:16px;">
+                  Posts
+                </a>
+              </li>
             </ul>
         </div>
     </div>

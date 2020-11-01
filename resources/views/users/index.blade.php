@@ -2,7 +2,7 @@
 @section('title', 'Users')
 @section('content')
 
-    <div class="flex flex-col">
+<div class="flex flex-col">
     @if ($message = Session::get('success'))
             <div class="alert alert-success">
                 <p>{{ $message }}</p>
