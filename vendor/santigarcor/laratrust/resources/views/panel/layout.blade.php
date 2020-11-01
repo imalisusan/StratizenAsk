@@ -10,6 +10,22 @@
   <link href="{{ asset(mix('laratrust.css', 'vendor/laratrust')) }}" rel="stylesheet">
   <link href="{{ asset('css/app.css') }}" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+   <!-- CSRF Token -->
+   <meta name="csrf-token" content="{{ csrf_token() }}">
+
+<title>{{ config('app.name', 'StratizenAsk') }}</title>
+
+<!-- Scripts -->
+<script src="{{ asset('js/app.js') }}" defer></script>
+
+<!-- Fonts -->
+<link rel="dns-prefetch" href="//fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+<link rel="shortcut icon" href="{{ asset('/vendor/laratrust/img/logo.png') }}">
+
+<!-- Styles -->
+<link href="{{ asset(mix('laratrust.css', 'vendor/laratrust')) }}" rel="stylesheet">
+<link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
 <div>
@@ -31,9 +47,6 @@
 
             <!-- Right Side Of Navbar -->
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                  <a href="{{config('laratrust.panel.go_back_route')}}" class="nav-link pt-3 pl-4" style="color: #000; font-size:16px;">← Go Back</a>
-              </li>
               <li class="nav-item">
                 <a href="{{ route('laratrust.roles-assignment.index') }}" class="nav-link pt-3 pl-4" style="color: #000; font-size:16px;">
                   Roles & Permissions Assignment
@@ -64,6 +77,32 @@
                   Posts
                 </a>
               </li>
+              <li class="nav-item dropdown pt-2">
+                            
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle h6 pt-2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre style="color:#000">
+                                <img src="{{ Storage::url('uploads/avatars/'. Auth::user()->id . '/' . Auth::user()->avatar . '') }}" class="rounded-circle pb-1 pr-1" style="height:30px;width:30px;float:left;" alt=""  onerror="this.src='uploads/avatars/avatar.png';">
+                                    {{ Auth::user()->username }}
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('welcome',Auth::user()->id) }}">Welcome</a>
+                                    <a class="dropdown-item" href="{{ route('home',Auth::user()->id) }}">Feed</a>
+                                    <a class="dropdown-item" href="{{ route('profile',Auth::user()->id) }}">My Profile</a>
+                                    <a class="dropdown-item" href="{{ route('users.edit',Auth::user()->id) }}">Edit Profile</a>
+                                    @role('administrator')
+                                    <a class="dropdown-item" href="{{ route('laratrust.roles-assignment.index') }}">Admin Panel</a>
+                                    @endrole
+                                    <a class="dropdown-item" href="{{ route('faq') }}">FAQs</a>
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                                </div>
+                            </li>
             </ul>
         </div>
     </div>

@@ -32,3 +32,5 @@ Route::get('/update_status/{post}', 'PostController@update_status')->name('updat
 Route::resource('/admin-panel/users', 'UserController'); 
 
 Route::resource('/admin-panel/courses', 'CourseController'); 
+
+Route::get('/faq', 'HomeController@faq')->name('faq');
