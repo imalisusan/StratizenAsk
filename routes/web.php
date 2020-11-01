@@ -23,16 +23,19 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('profile', 'HomeController@profile')->name('profile');
 
-Route::resource('posts', 'PostController'); 
+Route::resource('posts', 'PostController');
 
-Route::resource('users', 'UserController'); 
-
-Route::resource('courses', 'CourseController'); 
+Route::get('/index_admin', 'PostController@index_admin')->name('index_admin');
 
 Route::resource('tags', 'TagController'); 
 
 Route::get('/search', 'TagController@search')->name('search');
 
-//Route::get('/show', 'TagController@show')->name('show');
-
 Route::get('/tags/{tag}','TagController@show')->name('show'); 
+Route::get('/update_status/{post}', 'PostController@update_status')->name('update_status');
+
+Route::resource('/admin-panel/users', 'UserController'); 
+
+Route::resource('/admin-panel/courses', 'CourseController'); 
+
+Route::get('/faq', 'HomeController@faq')->name('faq');

@@ -20,8 +20,20 @@ class PostController extends Controller
      */
     public function index()
     {
-        $posts = Post::latest()->paginate(20);
+        $status = "published";
+        $posts = Post::latest()->where('status', "=", $status)->paginate(20);
         return view('posts.index', compact('posts'))->with('i', (request()->input('page', 1) - 1) * 20);
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index_admin()
+    {
+        $posts = Post::latest()->paginate(20);
+        return view('posts.index_admin', compact('posts'))->with('i', (request()->input('page', 1) - 1) * 20);
     }
 
     /**
@@ -68,7 +80,7 @@ class PostController extends Controller
         }
         $post->tags()->attach(1,array('tag_id'=>$tag_id));
 
-        return redirect()->route('posts.index')->with('success', 'Post created successfully.');
+        return redirect()->route('posts.index')->with('success', 'Post created successfully.It will be reviewed in no time');
     }
 
     /**
@@ -98,6 +110,27 @@ class PostController extends Controller
             $course->description = $course->name;
         }
         return view('posts.edit', compact('post'), compact('courses','tags'));
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  \App\Post  $post
+     * @return \Illuminate\Http\Response
+     */
+
+    public function update_status(Post $post){
+        $new_status;
+        if($post->status == 'pending'){
+            $new_status = 'published';
+            $post->status = $new_status;
+        }
+        elseif ($post->status == 'published') {
+            $new_status = 'pending';
+            $post->status = $new_status;
+        }
+        $post->update();
+        return redirect()->route('index_admin')->with('success', 'Post updated successfully');
     }
 
     /**

@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 85904e5d7e5f2b583e61adf0205aa8c987bb62d5
 @extends('laratrust::panel.layout')
 
 @section('title', 'Roles Assignment')
@@ -25,8 +29,13 @@
               <tr>
                 <th class="th">Id</th>
                 <th class="th">Name</th>
+<<<<<<< HEAD
                 <th class="th"># Roles</th>
                 @if(config('laratrust.panel.assign_permissions_to_user'))<th class="th"># Permissions</th>@endif
+=======
+                <th class="th">Roles</th>
+                @if(config('laratrust.panel.assign_permissions_to_user'))<th class="th">Permissions</th>@endif
+>>>>>>> 85904e5d7e5f2b583e61adf0205aa8c987bb62d5
                 <th class="th"></th>
               </tr>
             </thead>

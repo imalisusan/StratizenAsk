@@ -26,6 +26,7 @@ class CreatePostsTable extends Migration
             $table->string('title');
             $table->text('detail');
             $table->string('category');
+            $table->string('status')->default('pending');
             $table->dateTime('closed_on')->nullable();
             $table->timestamps();
         });

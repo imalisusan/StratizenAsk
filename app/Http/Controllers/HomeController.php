@@ -27,15 +27,16 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $posts = Post::latest()->paginate(20);
+        $status = "published";
+        $posts = Post::latest()->where('status', "=", $status)->paginate(20);
         return view('posts.index', compact('posts'))->with('i', (request()->input('page', 1) - 1) * 20);
     }
 
     public function profile()
     {
         $author_id = Auth::user()->id;
-        $posts = DB::table('posts')->where('user_id', "=", $author_id)->get();
-        return view('home', compact('posts'));
+        $posts = Post::latest()->where('user_id', "=", $author_id)->paginate(20);
+        return view('profile', compact('posts'))->with('i', (request()->input('page', 1) - 1) * 20);
     }
     
 }

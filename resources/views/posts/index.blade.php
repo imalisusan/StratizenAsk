@@ -30,7 +30,6 @@
                     @endif
 
                     <a href="{{ route('posts.show',$post->id) }}" class="card-link">View</a>
-                    <a class="card-link" href="{{ route('posts.edit',$post->id) }}">Edit</a>
                 </div>
         </div><br>
     @endforeach

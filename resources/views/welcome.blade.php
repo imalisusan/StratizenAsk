@@ -68,20 +68,30 @@
         </style>
     </head>
     <body>
+       <div class="container">
         <div class="flex-center position-ref full-height">
-            <div class="content">
-                <div class="title m-b-md">
-                    StratizenAsk
-                </div>
-                <div class="links">
-                    <a href="{{ route('posts.index') }}">Posts</a>
-                    <a href="{{ route('courses.index') }}">Courses</a>
-                    <a href="{{ route('posts.index') }}">Admin Panel</a>
-                    <a href="{{ route('tags.index') }}">Tags</a>
-
+                <div class="content"> 
+                
+                    <div class="links">
+                    <a class="" href="{{ route('posts.index') }}">View Posts</a>
+                    @role('administrator')
+                        <a class="" href="{{ route('laratrust.roles-assignment.index') }}">Admin Panel</a>
+                    @endrole
+                    @role('administrator')
+                        <a class="" href="{{ route('users.index') }}">Users</a>
+                    @endrole
+                    <div id="search" style="margin-top:40px;">
+                    <input type="text" placeholder="Search StratizenAsk" style="width:600px;height:60px;margin-bottom:20px;" class=""><br>
+                    <input type="submit" value="Search" class="btn btn-primary" style="background-color:#5E57D4; border: 1px solid #5E57D4;">
+                    </div>
+                    <div class="title m-b-md">
+                        <div><img src="uploads/avatars/logo.png" style="height:200px; " class="pr-3" a></div>
+                    </div>
+                    </div>
                 </div>
             </div>
         </div>
+       </div>
     </body>
 </html>
 @endsection
