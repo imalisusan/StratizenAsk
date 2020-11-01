@@ -19,7 +19,6 @@ class RolesAssignmentController
         $this->rolesModel = Config::get('laratrust.models.role');
         $this->permissionModel = Config::get('laratrust.models.permission');
         $this->assignPermissions = Config::get('laratrust.panel.assign_permissions_to_user');
-        // $this->middleware('auth');
     }
 
     public function index(Request $request)
