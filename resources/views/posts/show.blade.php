@@ -23,27 +23,29 @@
                     <p class="mb-0">Description: {{ $post->detail }}</p>
                     <p class="mb-0">Category: {{ $post->category }}</p>
                     <p class="mb-0">Author: {{  $author->name  }} </p>
+                    @role('administrator')
+                    <p class="mb-0">Status: {{ $post->status }}</p>
+                    @endrole
                 </div>
                 <div class="card-body" >
-                    <form action="{{ route('posts.destroy',$post->id) }}" method="POST">
                     @guest
-                    
+                        <a href="{{ route('posts.index') }}" class="card-link" style="color: #4B94FD;">Back</a>
                     @else
                         @if (Auth::user()->id == $author->id)
-                            <a class="card-link" href="{{ route('posts.edit',$post->id) }}"style="color: #4B94FD;">Edit</a>
-                                @csrf
-                                @method('DELETE')
-                                <button type="submit" class="btn card-link" style="color: #4B94FD;">Delete</button>
-                        @else
-                            @role('administrator')
+                            <form action="{{ route('posts.destroy',$post->id) }}" method="POST">
+                                <a class="card-link" href="{{ route('posts.edit',$post->id) }}"style="color: #4B94FD;">Edit</a>
                                     @csrf
                                     @method('DELETE')
                                     <button type="submit" class="btn card-link" style="color: #4B94FD;">Delete</button>
+                                    <a href="{{ route('posts.index') }}" class="card-link" style="color: #4B94FD;">Back</a>
+                            </form>
+                        @else
+                            @role('administrator')
+                                <a class="card-link" href="{{ route('update_status',$post->id) }}"style="color: #4B94FD;">Change Status</a>
+                                <a href="{{ route('index_admin') }}" class="card-link" style="color: #4B94FD;">Back</a>
                             @endrole
                         @endif
                     @endguest
-                    <a href="{{ route('posts.index') }}" class="card-link" style="color: #4B94FD;">Back</a>
-                    </form>
                 </div>
         </div><br>
 

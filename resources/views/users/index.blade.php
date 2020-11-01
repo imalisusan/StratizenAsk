@@ -1,41 +1,56 @@
-@extends('layouts.app')
+@extends('laratrust::panel.layout')
+@section('title', 'Users')
 @section('content')
 
-    <div class="container">
-        <div class="row">
-        @if ($message = Session::get('success'))
+<div class="flex flex-col">
+    @if ($message = Session::get('success'))
             <div class="alert alert-success">
                 <p>{{ $message }}</p>
             </div>
-        @endif
-
-        <table class="table table-bordered">
+    @endif
+    <div class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
+      <div class="mt-4 align-middle inline-block min-w-full shadow overflow-hidden sm:rounded-lg border-b border-gray-200">
+        <table class="min-w-full">
+          <thead>
             <tr>
-                <th>User Id</th>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Course</th>
-                <th width="280px">Action</th>
+              <th class="th">Id</th>
+              <th class="th">User Name</th>
+              <th class="th">Email</th>
+              <th class="th">Course</th>
+              <th class="th"></th>
             </tr>
+          </thead>
+          <tbody class="bg-white">
             @foreach ($users as $user)
             <tr>
-                <td>{{ $user->id }}</td>
-                <td>{{ $user->name }}</td>
-                <td>{{ $user->email }}</td>
-                <td>{{ $user->course }}</td>
-                <td>
-                    <form action="{{ route('users.destroy',$user->id) }}" method="POST">
-                        <a class="btn btn-info" href="{{ route('users.show',$user->id) }}">Show</a>
-                        <a class="btn btn-primary" href="{{ route('users.edit',$user->id) }}">Edit</a>
-                        @csrf
-                        @method('DELETE')
-                        <button type="submit" class="btn btn-danger">Delete</button>
-                    </form>
-                </td>
+              <td class="td text-sm leading-5 text-gray-900">
+                {{$user->id}}
+              </td>
+              <td class="td text-sm leading-5 text-gray-900">
+                {{$user->name}}
+              </td>
+              <td class="td text-sm leading-5 text-gray-900">
+                {{$user->email}}
+              </td>
+              <td class="td text-sm leading-5 text-gray-900">
+                {{$user->course}}
+              </td>
+              <td class="flex justify-end px-6 py-4 whitespace-no-wrap text-right border-b border-gray-200 text-sm leading-5 font-medium">
+                <a class="text-blue-600 hover:text-blue-900" href="{{ route('users.show',$user->id) }}">Show</a>
+                <a class="text-blue-600 hover:text-blue-900 ml-4" href="{{ route('users.edit',$user->id) }}">Edit</a>
+
+                <form action="{{ route('users.destroy',$user->id) }}" method="POST" onsubmit="return confirm('Are you sure you want to delete the course?');">
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit" class="text-red-600 hover:text-red-900 ml-4">Delete</button>
+                </form>
+              </td>
             </tr>
             @endforeach
+          </tbody>
         </table>
-        </div>
+      </div>
     </div>
-    {!! $users->links() !!}
+</div>
+{{ $users->links('laratrust::panel.pagination') }}
 @endsection
