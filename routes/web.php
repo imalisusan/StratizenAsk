@@ -25,6 +25,6 @@ Route::get('profile', 'HomeController@profile')->name('profile');
 
 Route::resource('posts', 'PostController'); 
 
-Route::resource('users', 'UserController'); 
+Route::resource('/admin-panel/users', 'UserController'); 
 
-Route::resource('courses', 'CourseController'); 
+Route::resource('/admin-panel/courses', 'CourseController'); 
