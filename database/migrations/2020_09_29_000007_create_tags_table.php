@@ -4,13 +4,13 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCategoriesTable extends Migration
+class CreateTagsTable extends Migration
 {
     /**
      * Schema table name to migrate
      * @var string
      */
-    public $tableName = 'categories';
+    public $tableName = 'tags';
 
     /**
      * Run the migrations.
@@ -26,11 +26,11 @@ class CreateCategoriesTable extends Migration
             $table->string('name', 45)->nullable();
             $table->nullableTimestamps();
         });
-        Schema::create('category_post', function (Blueprint $table) {
+        Schema::create('post_tag', function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->integer('post_id')->nullable();
-            $table->integer('category_id')->nullable();
-            $table->primary(['post_id','category_id']);
+            $table->integer('tag_id')->nullable();
+            $table->primary(['post_id','tag_id']);
         });
 
     }
