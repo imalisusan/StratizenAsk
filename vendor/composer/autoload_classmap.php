@@ -94,7 +94,7 @@ return array(
     'App\\Http\\Requests\\StoreCourseRequest' => $baseDir . '/app/Http/Requests/StoreCourseRequest.php',
     'App\\Http\\Requests\\StorePostRequest' => $baseDir . '/app/Http/Requests/StorePostRequest.php',
     'App\\Http\\Requests\\StoreUserRequest' => $baseDir . '/app/Http/Requests/StoreUserRequest.php',
-    'App\\Permission' => $baseDir . '/app/Http/Permission.php',
+    'App\\Permission' => $baseDir . '/app/Permission.php',
     'App\\Post' => $baseDir . '/app/Post.php',
     'App\\Providers\\AppServiceProvider' => $baseDir . '/app/Providers/AppServiceProvider.php',
     'App\\Providers\\AuthServiceProvider' => $baseDir . '/app/Providers/AuthServiceProvider.php',

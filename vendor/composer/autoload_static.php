@@ -635,7 +635,7 @@ class ComposerStaticInit9b68c0209921f57376a42af5370a1f31
         'App\\Http\\Requests\\StoreCourseRequest' => __DIR__ . '/../..' . '/app/Http/Requests/StoreCourseRequest.php',
         'App\\Http\\Requests\\StorePostRequest' => __DIR__ . '/../..' . '/app/Http/Requests/StorePostRequest.php',
         'App\\Http\\Requests\\StoreUserRequest' => __DIR__ . '/../..' . '/app/Http/Requests/StoreUserRequest.php',
-        'App\\Permission' => __DIR__ . '/../..' . '/app/Http/Permission.php',
+        'App\\Permission' => __DIR__ . '/../..' . '/app/Permission.php',
         'App\\Post' => __DIR__ . '/../..' . '/app/Post.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
