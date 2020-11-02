@@ -38,5 +38,9 @@ class HomeController extends Controller
         $posts = Post::latest()->where('user_id', "=", $author_id)->paginate(20);
         return view('profile', compact('posts'))->with('i', (request()->input('page', 1) - 1) * 20);
     }
+    public function faq()
+    {
+        return view('faq');
+    }
     
 }
