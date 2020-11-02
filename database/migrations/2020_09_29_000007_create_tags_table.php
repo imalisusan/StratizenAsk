@@ -24,6 +24,8 @@ class CreateTagsTable extends Migration
             $table->engine = 'InnoDB';
             $table->increments('id');
             $table->string('name', 45)->nullable();
+            $table->string('description', 255)->nullable();
+
             $table->nullableTimestamps();
         });
         Schema::create('post_tag', function (Blueprint $table) {

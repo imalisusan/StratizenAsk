@@ -22,12 +22,7 @@
     <!-- Styles -->
     <link href="{{ asset(mix('laratrust.css', 'vendor/laratrust')) }}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-<<<<<<< HEAD
-
-
-=======
     
->>>>>>> 85904e5d7e5f2b583e61adf0205aa8c987bb62d5
 </head>
 <body>
     <div id="app">
@@ -59,7 +54,7 @@
                                     <a class="nav-link pt-3" href="{{ route('register') }}" style="color: #000; font-size:16px;">{{ __('Register') }}</a>
                                 </li>
                             @endif
-                        @else
+                            @else
                             <li class="nav-item dropdown pt-2">
                             
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle h6 pt-2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre style="color:#000">
