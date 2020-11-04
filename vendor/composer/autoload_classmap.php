@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\Comment' => $baseDir . '/app/Comment.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Course' => $baseDir . '/app/Course.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
@@ -15,6 +16,7 @@ return array(
     'App\\Http\\Controllers\\Auth\\RegisterController' => $baseDir . '/app/Http/Controllers/Auth/RegisterController.php',
     'App\\Http\\Controllers\\Auth\\ResetPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ResetPasswordController.php',
     'App\\Http\\Controllers\\Auth\\VerificationController' => $baseDir . '/app/Http/Controllers/Auth/VerificationController.php',
+    'App\\Http\\Controllers\\CommentController' => $baseDir . '/app/Http/Controllers/CommentController.php',
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
     'App\\Http\\Controllers\\CourseController' => $baseDir . '/app/Http/Controllers/CourseController.php',
     'App\\Http\\Controllers\\HomeController' => $baseDir . '/app/Http/Controllers/HomeController.php',
@@ -29,6 +31,7 @@ return array(
     'App\\Http\\Middleware\\TrustHosts' => $baseDir . '/app/Http/Middleware/TrustHosts.php',
     'App\\Http\\Middleware\\TrustProxies' => $baseDir . '/app/Http/Middleware/TrustProxies.php',
     'App\\Http\\Middleware\\VerifyCsrfToken' => $baseDir . '/app/Http/Middleware/VerifyCsrfToken.php',
+    'App\\Http\\Requests\\StoreCommentRequest' => $baseDir . '/app/Http/Requests/StoreCommentRequest.php',
     'App\\Http\\Requests\\StoreCourseRequest' => $baseDir . '/app/Http/Requests/StoreCourseRequest.php',
     'App\\Http\\Requests\\StorePostRequest' => $baseDir . '/app/Http/Requests/StorePostRequest.php',
     'App\\Http\\Requests\\StoreUserRequest' => $baseDir . '/app/Http/Requests/StoreUserRequest.php',
@@ -140,6 +143,7 @@ return array(
     'Chatify\\Http\\Controllers\\MessagesController' => $vendorDir . '/munafio/chatify/src/Http/Controllers/MessagesController.php',
     'Chatify\\Http\\Models\\Favorite' => $vendorDir . '/munafio/chatify/src/Http/Models/Favorite.php',
     'Chatify\\Http\\Models\\Message' => $vendorDir . '/munafio/chatify/src/Http/Models/Message.php',
+    'CommentSeeder' => $baseDir . '/database/seeds/CommentSeeder.php',
     'CourseSeeder' => $baseDir . '/database/seeds/CourseSeeder.php',
     'Cron\\AbstractField' => $vendorDir . '/dragonmantank/cron-expression/src/Cron/AbstractField.php',
     'Cron\\CronExpression' => $vendorDir . '/dragonmantank/cron-expression/src/Cron/CronExpression.php',

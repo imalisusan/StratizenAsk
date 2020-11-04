@@ -552,6 +552,7 @@ class ComposerStaticInit9b68c0209921f57376a42af5370a1f31
     );
 
     public static $classMap = array (
+        'App\\Comment' => __DIR__ . '/../..' . '/app/Comment.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Course' => __DIR__ . '/../..' . '/app/Course.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
@@ -561,6 +562,7 @@ class ComposerStaticInit9b68c0209921f57376a42af5370a1f31
         'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
         'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
         'App\\Http\\Controllers\\Auth\\VerificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerificationController.php',
+        'App\\Http\\Controllers\\CommentController' => __DIR__ . '/../..' . '/app/Http/Controllers/CommentController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\CourseController' => __DIR__ . '/../..' . '/app/Http/Controllers/CourseController.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
@@ -575,6 +577,7 @@ class ComposerStaticInit9b68c0209921f57376a42af5370a1f31
         'App\\Http\\Middleware\\TrustHosts' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustHosts.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Http\\Requests\\StoreCommentRequest' => __DIR__ . '/../..' . '/app/Http/Requests/StoreCommentRequest.php',
         'App\\Http\\Requests\\StoreCourseRequest' => __DIR__ . '/../..' . '/app/Http/Requests/StoreCourseRequest.php',
         'App\\Http\\Requests\\StorePostRequest' => __DIR__ . '/../..' . '/app/Http/Requests/StorePostRequest.php',
         'App\\Http\\Requests\\StoreUserRequest' => __DIR__ . '/../..' . '/app/Http/Requests/StoreUserRequest.php',
@@ -686,6 +689,7 @@ class ComposerStaticInit9b68c0209921f57376a42af5370a1f31
         'Chatify\\Http\\Controllers\\MessagesController' => __DIR__ . '/..' . '/munafio/chatify/src/Http/Controllers/MessagesController.php',
         'Chatify\\Http\\Models\\Favorite' => __DIR__ . '/..' . '/munafio/chatify/src/Http/Models/Favorite.php',
         'Chatify\\Http\\Models\\Message' => __DIR__ . '/..' . '/munafio/chatify/src/Http/Models/Message.php',
+        'CommentSeeder' => __DIR__ . '/../..' . '/database/seeds/CommentSeeder.php',
         'CourseSeeder' => __DIR__ . '/../..' . '/database/seeds/CourseSeeder.php',
         'Cron\\AbstractField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/AbstractField.php',
         'Cron\\CronExpression' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/CronExpression.php',
