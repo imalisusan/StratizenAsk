@@ -34,3 +34,7 @@ Route::resource('/admin-panel/users', 'UserController');
 Route::resource('/admin-panel/courses', 'CourseController'); 
 
 Route::get('/faq', 'HomeController@faq')->name('faq');
+
+Route::get('/comments/{post_id}', 'CommentController@store')->name('comments_store');
+
+Route::resource('comments', 'CommentController');
