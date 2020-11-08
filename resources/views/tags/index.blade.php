@@ -10,12 +10,13 @@
             <input name="query" id="query" class="form-control mr-sm-2" type="text" placeholder="Search Tags" aria-label="Search">
             <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
 </form>
-<div class="border mt-4 shadow-sm card-deck pb-2">
+<div class="mt-4 card-deck pb-2">
       @if(count($tags)>1)
+      
       @foreach ($tags as $tag)
-            <div class="col-3 card-group pb-2 mt-2">
-                  <div class="card-body border">
-                  <h3 class="title"><a href="{{ route ('show',['tag' => $tag] ) }}">{{$tag->name}}</a></h3>
+      <div class="col-3 card-group pb-2 mt-1 ">
+                  <div class="card-body border bg-white shadow-sm">
+                  <h3 class="card-title"><a href="{{ route ('show',['tag' => $tag] ) }}">{{$tag->name}}</a></h3>
                         <p>{{$tag->description}}</p>
                   </div>
             </div>

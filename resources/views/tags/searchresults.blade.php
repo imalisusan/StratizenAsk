@@ -9,10 +9,10 @@
       <h1>Search Results</h1>
 <p>{{ $tags->count()}} result(s) for '{{ request()->input('query')}}'</p>
 </div>
-<div class="mt-4 card-deck">
+      <div class="mt-4 col-12">
+      <div class="card-deck">
       @foreach ($tags as $tag)
-            <div class="col-3 border card-group">
-                  <div class="card-body shadow-sm border">
+                  <div class="card-body col-3 shadow-sm border m-2 bg-white">
                   <h3 class="title"><a href="/tags/{{$tag->name}}">{{$tag->name}}</a></h3>
                   <p>{{$tag->description}}</p>
             </div>

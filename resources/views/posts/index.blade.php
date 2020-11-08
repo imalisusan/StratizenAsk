@@ -22,9 +22,9 @@
 
                     @if (count($post->tags)>0)
                         <p class="mb-0">Tags:</p>
-                        <ul>
+                        <ul class="list-group list-group-horizontal">
                             @foreach ($post->tags as $tag)
-                                <li><a href="{{ route ('show',['tag' => $tag] ) }}">{{$tag->name}}</a></li>
+                                <li class="list-group-item p-2 border-0"><a href="{{ route ('show',['tag' => $tag] ) }}">{{$tag->name}}</a></li>
                             @endforeach
                         </ul>
                     @endif

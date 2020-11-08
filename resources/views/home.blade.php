@@ -20,7 +20,19 @@
                     <h5 class="font-weight-bold mb-3">Title: {{ $post->title }}</h5>
                     <p class="mb-0">Description: {{ $post->detail }}</p>
                     <p class="mb-0">Category: {{ $post->category }}</p>
+                    @if (count($post->tags)>0)
+                        <p class="mb-0">Tags:</p>
+                        <ul class="list-group-horizontal">
+                            @foreach ($post->tags as $tag)
+                                <li class="list-group-item"><a href="{{ route ('show',['tag' => $tag] ) }}">{{$tag->name}}</a></li>
+                            @endforeach
+                        </ul>
+                    @endif
                     <p class="mb-0">Published on: {{ $post->published_on }}</p>
+                    <p>Tags:</p>
+                    <ul>
+                        <li></li>
+                    </ul>
                 </div>
                 <div class="card-body">
                     <a href="{{ route('posts.show',$post->id) }}" class="card-link">View</a>
