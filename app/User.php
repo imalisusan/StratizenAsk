@@ -49,5 +49,8 @@ class User extends Authenticatable
     {
         return $this->belongsTo(Course::class);
     }
-    
+    public function comments()
+    {
+        return $this->hasMany(Comment::class);
+    }
 }

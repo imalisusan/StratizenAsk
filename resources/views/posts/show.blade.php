@@ -11,6 +11,7 @@
             background-color:#f3f3f3;
         }
     </style>
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
 </head>
 <body>
 @extends('layouts.app')
@@ -58,6 +59,51 @@
                     @endguest
                 </div>
         </div><br>
+        <div class="comment-form">
+                <form action="{{ route('comments_store',$post->id) }}" method="GET">
+                        <div class="col-md-12">
+                            <label for="comment"><strong>Join the Discussion</strong></label>
+                            <textarea class="form-control" style="height:100px; width:700px;" name="comment" placeholder="Tell us what you think"></textarea>
+                        </div> <br>
+                        <div class="col-md-12 pt-3">
+                        <button type="submit" class="btn btn-primary">Add Comment</button>
+                        </div>
+                </form>
+            </div><br>
+        <div class="row">
+        
+            <div class="col-md-8 col-md-offset-2">           
+            <h3><i class="fas fa-comments" style="color: #227DC7"></i>  Comments</h3>
+                @foreach ($comments as $comment)
+                    <div class="comment">
+                        @if (Auth::user()->id == $comment->user_id)
+                            <img src="{{ Storage::url('uploads/avatars/'. Auth::user()->id . '/' . Auth::user()->avatar . '') }}" class="rounded-circle pb-1 pr-1" style="height:30px;width:30px;float:left;" alt=""  onerror="this.src='uploads/avatars/avatar.png';">
+                            <p style="margin-bottom:0px;"><strong> You </strong> said...</p>
+                        @else
+                        <img src="{{ Storage::url('uploads/avatars/'. $comment->user_id . '/' . $comment->avatar . '') }}" class="rounded-circle pb-1 pr-1" style="height:30px;width:30px;float:left;" alt=""  onerror="this.src='uploads/avatars/avatar.png';">
+                            <p style="margin-bottom:0px;"><strong>{{ $comment->author }} </strong> said...</p>
+                        @endif
+                            <p style="color: #A8A8A8; font-size:12px;margin-bottom:0px;">on {{ $comment->updated_at }}</p>
+                            <p style="margin-bottom:0px;">{{ $comment->comment }}</p><br>   
+                            @if (Auth::user()->id == $comment->user_id)
+                                    <form action="{{ route('comments.destroy',$comment->id) }}" method="POST">
+                                    <a class="card-link" href="{{ route('comments.edit',$comment->id) }}"style="color: #4B94FD;">Edit</a>
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="btn card-link" style="color: #4B94FD;">Delete</button>
+                                    </form>
+                
+                            @else
+
+                            @endif
+                        </>
+                    </div>
+                @endforeach
+            </div>
+           
+        </div>
+
+        {!! $comments->links() !!}
         </div>
 @endsection
 </body>

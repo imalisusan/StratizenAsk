@@ -3,13 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Post;
-use App\Course;
 use App\User;
 use App\Tag;
-
-use App\Http\Requests\StorePostRequest;
+use App\Course;
+use App\Comment;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\StorePostRequest;
 
 class PostController extends Controller
 {
@@ -92,8 +92,15 @@ class PostController extends Controller
     public function show(Post $post)
     {
         $author =  User::find($post->user_id);
-        
-        return view('posts.show', compact('post', 'author'));
+        $post_id = $post->id;
+        $comments = Comment::latest()->where('post_id', "=", $post_id)->paginate(5);
+        foreach ($comments as $comment) {
+            $comment->comment = $comment->comment;
+            $commentor =  User::find($comment->user_id);
+            $comment->author = $commentor->name;
+            $comment->avatar = $commentor->avatar;
+        }
+        return view('posts.show', compact('post', 'author', 'comments'))->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
     /**
