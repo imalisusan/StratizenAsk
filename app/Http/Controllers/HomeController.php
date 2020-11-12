@@ -39,4 +39,15 @@ class HomeController extends Controller
         return view('profile', compact('posts'))->with('i', (request()->input('page', 1) - 1) * 20);
     }
     
+    public function faq()
+    {
+        return view('faq');
+    }
+    public function search(Request $request)
+    {
+        $key = $request->query('searchKey');
+        $posts = Post::search($searchKey)->get();
+        return view('search', compact('posts'));
+    }
+    
 }

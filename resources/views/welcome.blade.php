@@ -81,8 +81,12 @@
                         <a class="" href="{{ route('users.index') }}">Users</a>
                     @endrole
                     <div id="search" style="margin-top:40px;">
-                    <input type="text" placeholder="Search StratizenAsk" style="width:600px;height:60px;margin-bottom:20px;" class=""><br>
-                    <input type="submit" value="Search" class="btn btn-primary" style="background-color:#5E57D4; border: 1px solid #5E57D4;">
+                    
+                    <form action="{{ route('search') }}" method="post">
+                    <input type="text" placeholder="Search StratizenAsk" style="width:600px;height:60px;margin-bottom:20px;border: 1px solid #A0AEC0;" class=""><br>
+                    <input type="submit"  name="search" class="btn btn-primary" style="background-color:#5E57D4; border: 1px solid #5E57D4; ">
+                    </form>
+                   
                     </div>
                     <div class="title m-b-md">
                         <div><img src="uploads/avatars/logo.png" style="height:200px; " class="pr-3" a></div>
