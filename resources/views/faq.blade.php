@@ -1,105 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<style>
+*,
+*::before,
+*::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html{
+	font-family: 'Sans';
+	font-size: 10px;
+	box-sizing: border-box;
+}
+
+section{
+	width: 100%;
+	height: 100vh;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.accordion{
+	text-align: center;
+	font-size: 3.0rem;
+	background-color: white;
+}
+.container{
+	width: 100%;
+	max-width: 80rem;
+	margin: 0 auto;
+	padding: 0 1.5rem;
+}
+
+.accordion-item{
+	background-color: white;
+	border-radius: 4rem;
+	margin-bottom: 1rem;
+	padding: 1rem;
+	box-shadow: .5rem 2px, 5rem rgba(0,0,0,.1);
+}
+
+.accordion-link{
+	font-size: 1.6rem;
+	color: black;
+	text-decoration: none;
+	background-color: white;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content:space-between;
+	padding: 1rem 0;
+}
+
+.accordion-link 1{
+	color: white;
+	padding: 5rem;
+}
+
+.accordion-link .ion-and-remove{
+	display: none;
+}
+
+.answer{
+	max-height: 0;
+	overflow: hidden;
+	position: relative;
+	background-color: antiquewhite;
+	transition: max-height 1000ms;
+	font-size: 2.5rem;
+}
+
+.answer::before{
+	content: "";
+	position: absolute;
+	width: .6rem;
+	height: 100%;
+	background-color: black;
+	top: 50%
+	left:0;
+	transform: translateY(-50%);
+	font-size: 2.5rem;
+}
+
+.answer p{
+	font-size: 2.5rem;
+	color: rgba(255,255,255,0);
+	padding: 2rem;
+}
+
+.accordion-item:target .accordion-link .ion-md-add{
+	display: none;
+}
+
+.accordion-item:target .accordion-link .ion-md-remove{
+	display: block;
+}
+
+
+
+
+.accordion-item:target .answer{
+	max-height: 60rem;
+}
+
+</style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>FAQs</title>
   <link href="https://unpkg.com/ionicons@5.10.0/dist/css/ionicons.min.css" rel="stylesheet">
-    <style>
-        *,
-*::before,
-*::after{
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-html{
-  font-family: 'Roboto', sans-serif;
-  font-size: 10px;
-  box-sizing: border-box;
-}
-section{
-  width: 100%;
-  height: 100vh;
-  background-color: darkslategray;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.accordion{
-  text-align: center;
-  font-size: 3.0rem;
-  background-color: coral;
-}
-.container{
-  width: 100%;
-  max-width: 80rem;
-  margin: 0 auto;
-  padding: 0 1.5rem;
-}
-.accordion-item{
-  background-color: coral;
-  border-radius: 4rem;
-  margin-bottom: 1rem;
-  padding: 1rem;
-  box-shadow: .5rem 2px, 5rem rgba(0,0,0,.1);
-}
-.accordion-link{
-  font-size: 1.6rem;
-  color: rgba(255,255,255,8);
-  text-decoration: none;
-  background-color: darkslategrey;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content:space-between;
-  padding: 1rem 0;
-}
-.accordion-link 1{
-  color: darkslategrey;
-  padding: 5rem;
-}
-.accordion-link .ion-and-remove{
-  display: none;
-}
-.answer{
-  max-height: 0;
-  overflow: hidden;
-  position: relative;
-  background-color: antiquewhite;
-  transition: max-height 1000ms;
-  font-size: 2.5rem;
-}
-.answer::before{
-  content: "";
-  position: absolute;
-  width: .6rem;
-  height: 100%;
-  background-color: lime;
-  top: 50%
-  left:0;
-  transform: translateY(-50%);
-  font-size: 2.5rem;
-}
-.answer p{
-  font-size: 2.5rem;
-  color: rgba(255,255,255,0);
-  padding: 2rem;
-}
-.accordion-item:target .accordion-link .ion-md-add{
-  display: none;
-}
-.accordion-item:target .accordion-link .ion-md-remove{
-  display: block;
-}
-.accordion-item:target .answer{
-  max-height: 60rem;
-}
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+   
 @extends('layouts.app')
 @section('content')
+
     <section>
         
         <div class="container">
@@ -131,6 +152,7 @@ section{
                  
               </div>
             </div>
+
             <div class="accordion-item" id="question3">
                 <a class="accordion-link" href="#question3">
                 Why are some questions deleted?
@@ -152,6 +174,7 @@ section{
               <div class="answer">
                 
                Tags are used to help you identify questions that are interesting or relevant to you.Clicking on a tag allows yoy to see a description of what the tag is and how it should be applied on StratizenAsk.As a general rule, you should avoid creating new tags if possible, and new users are not allowed to create new tags. Even if you have sufficient reputation, you should only create new tags when you feel you can make a strong case that your question covers a new topic that nobody else has asked about before on this site.
+
                   
               </div>
             </div>
@@ -168,6 +191,7 @@ section{
                   
               </div>
             </div>
+
             <div class="accordion-item" id="question6">
                 <a class="accordion-link" href="#question6">
                 What is the role of the Faculty?
@@ -184,5 +208,7 @@ section{
         </div>
     </section>
     @endsection
+    
+
 </body>
 </html>

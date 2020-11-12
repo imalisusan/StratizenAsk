@@ -43,5 +43,11 @@ class HomeController extends Controller
     {
         return view('faq');
     }
+    public function search(Request $request)
+    {
+        $key = $request->query('searchKey');
+        $posts = Post::search($searchKey)->get();
+        return view('search', compact('posts'));
+    }
     
 }
