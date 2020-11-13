@@ -25,7 +25,7 @@ Route::get('profile', 'HomeController@profile')->name('profile');
 
 Route::resource('posts', 'PostController');
 
-Route::get('/search/{searchKey}', 'HomeController@search')->name('search');
+Route::get('/search', 'HomeController@search')->name('search');
 
 Route::get('/index_admin', 'PostController@index_admin')->name('index_admin');
 

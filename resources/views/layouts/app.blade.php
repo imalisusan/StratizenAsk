@@ -37,7 +37,9 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-
+                    <form class="flex" action="{{ route('search') }}" method="GET">
+                    <input type="text" class="" name="search"  placeholder="Search StratizenAsk" style="width:250px;height:30px; margin-top:20px; border: 1px solid #A0AEC0; marg">
+                    </form>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
