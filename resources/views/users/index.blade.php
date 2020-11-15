@@ -37,7 +37,6 @@
               </td>
               <td class="flex justify-end px-6 py-4 whitespace-no-wrap text-right border-b border-gray-200 text-sm leading-5 font-medium">
                 <a class="text-blue-600 hover:text-blue-900" href="{{ route('users.show',$user->id) }}">Show</a>
-                <a class="text-blue-600 hover:text-blue-900 ml-4" href="{{ route('users.edit',$user->id) }}">Edit</a>
 
                 <form action="{{ route('users.destroy',$user->id) }}" method="POST" onsubmit="return confirm('Are you sure you want to delete the course?');">
                     @csrf
