@@ -1,8 +1,70 @@
-@extends('layouts.app')
-
-@section('content')
 @include('Chatify::layouts.headLinks')
-<div class="messenger">
+<div id="app">
+    <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex" href="{{ route('home') }}">
+            <div><img src="{{ asset('/vendor/laratrust/img/logo.png') }}" style="height:40px; border-right: 1px solid #333;" class="pr-3" a></div>
+                <div class="pl-3 pt-2" style="color:#000;">{{ config('app.name', 'StratizenAsk') }}</div>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Left Side Of Navbar -->
+                <ul class="navbar-nav mr-auto" >
+                <form class="form-inline d-flex justify-content-center md-form form-sm active-purple active-purple-2 mt-2"  action="{{ route('search') }}" method="GET">
+                <input type="text" class="form-control form-control-sm ml-3 w-75" name="search"  placeholder="&#xF002; Search" style="font-family:Arial, FontAwesome" style="text-align:center;width:800px;height:25px; margin-top:5px; border: 1px solid #A0AEC0;">
+                </form>
+                </ul>
+
+                <!-- Right Side Of Navbar -->
+                <ul class="navbar-nav ml-auto">
+                    <!-- Authentication Links -->
+                    @guest
+                        <li class="nav-item">
+                            <a class="nav-link pt-3" href="{{ route('login') }}" style="color: #000; font-size:16px;">{{ __('Login') }}</a>
+                        </li>
+                        @if (Route::has('register'))
+                            <li class="nav-item">
+                                <a class="nav-link pt-3" href="{{ route('register') }}" style="color: #000; font-size:16px;">{{ __('Register') }}</a>
+                            </li>
+                        @endif
+                    @else
+                        <li class="nav-item dropdown pt-2">
+                        
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle h6 pt-2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre style="color:#000">
+                            <img src="{{ Storage::url('uploads/avatars/'. Auth::user()->id . '/' . Auth::user()->avatar . '') }}" class="rounded-circle pb-1 pr-1" style="height:30px;width:30px;float:left;" alt=""  onerror="this.src='uploads/avatars/avatar.png';">
+                                    {{ Auth::user()->username }}
+                            </a>
+
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="{{ route('welcome',Auth::user()->id) }}">Welcome</a>
+                                <a class="dropdown-item" href="{{ route('home',Auth::user()->id) }}">Feed</a>
+                                <a class="dropdown-item" href="{{ route('profile',Auth::user()->id) }}">My Profile</a>
+                                <a class="dropdown-item" href="{{ route('users.edit',Auth::user()->id) }}">Edit Profile</a>
+                                <a class="dropdown-item" href="./chat">Chat</a>
+                                @role('administrator')
+                                <a class="dropdown-item" href="{{ route('laratrust.roles-assignment.index') }}">Admin Panel</a>
+                                @endrole
+                                <a class="dropdown-item" href="{{ route('faq') }}">FAQs</a>
+                                <a class="dropdown-item" href="{{ route('logout') }}"
+                                   onclick="event.preventDefault();
+                                                 document.getElementById('logout-form').submit();">
+                                    {{ __('Logout') }}
+                                </a>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    @csrf
+                                </form>
+                            </div>
+                        </li>
+                    @endguest
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<div class="messenger py-4">
     {{-- ----------------------Users/Groups lists side---------------------- --}}
     <div class="messenger-listView">
         {{-- Header and search bar --}}
@@ -21,8 +83,6 @@
             <div class="messenger-listView-tabs">
                 <a href="#" @if($route == 'user') class="active-tab" @endif data-view="users">
                     <span class="far fa-user"></span> People</a>
-                <a href="#" @if($route == 'group') class="active-tab" @endif data-view="groups">
-                    <span class="fas fa-users"></span> Groups</a>
             </div>
         </div>
         {{-- tabs and lists --}}
@@ -43,13 +103,7 @@
                
            </div>
 
-           {{-- ---------------- [ Group Tab ] ---------------- --}}
-           <div class="@if($route == 'group') show @endif messenger-tab app-scroll" data-view="groups">
-                {{-- items --}}
-                <p style="text-align: center;color:grey;">Soon will be available</p>
-             </div>
-
-             {{-- ---------------- [ Search Tab ] ---------------- --}}
+            {{-- ---------------- [ Search Tab ] ---------------- --}}
            <div class="messenger-tab app-scroll" data-view="search">
                 {{-- items --}}
                 <p class="messenger-title">Search</p>
@@ -119,5 +173,3 @@
 
 @include('Chatify::layouts.modals')
 @include('Chatify::layouts.footerLinks')
-
-@endsection
