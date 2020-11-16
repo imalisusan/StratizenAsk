@@ -13,6 +13,8 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="https://kit.fontawesome.com/a81368914c.js"></script>
 
+
+
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
@@ -58,7 +60,7 @@
                                     <a class="nav-link pt-3" href="{{ route('register') }}" style="color: #000; font-size:16px;">{{ __('Register') }}</a>
                                 </li>
                             @endif
-                        @else
+                            @else
                             <li class="nav-item dropdown pt-2">
                             
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle h6 pt-2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre style="color:#000">
@@ -75,6 +77,7 @@
                                     @role('administrator')
                                     <a class="dropdown-item" href="{{ route('laratrust.roles-assignment.index') }}">Admin Panel</a>
                                     @endrole
+                                    <a class="dropdown-item" href="{{ route('tags.index') }}">Categories</a>
                                     <a class="dropdown-item" href="{{ route('faq') }}">FAQs</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
@@ -92,9 +95,9 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <div class="py-4 container">
             @yield('content')
-        </main>
+        </div>
     </div>
 </body>
 </html>

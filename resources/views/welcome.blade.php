@@ -64,7 +64,7 @@
 
             .m-b-md {
                 margin-bottom: 30px;
-            }
+            } 
         </style>
     </head>
     <body>
@@ -74,6 +74,7 @@
                 
                     <div class="links">
                     <a class="" href="{{ route('posts.index') }}">View Posts</a>
+
                     @role('administrator')
                         <a class="" href="{{ route('laratrust.roles-assignment.index') }}">Admin Panel</a>
                     @endrole
@@ -93,6 +94,7 @@
                     </div>
                     </div>
                 </div>
+            </div>
         </div>
        </div>
     </body>

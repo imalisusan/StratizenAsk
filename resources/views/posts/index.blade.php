@@ -17,10 +17,18 @@
         <div class="card" style="width: 100%;">
                 <div class="card-body">
                     <h5 class="font-weight-bold mb-3">Title: {{ $post->title }}</h5>
-                    <p class="mb-0">Deescription: {{ $post->detail }}</p>
+                    <p class="mb-0">Description: {{ $post->detail }}</p>
                     <p class="mb-0">Category: {{ $post->category }}</p>
-                </div>
-                <div class="card-body">
+
+                    @if (count($post->tags)>0)
+                        <p class="mb-0">Tags:</p>
+                        <ul class="list-group list-group-horizontal">
+                            @foreach ($post->tags as $tag)
+                                <li class="list-group-item p-2 border-0"><a href="{{ route ('show',['tag' => $tag] ) }}">{{$tag->name}}</a></li>
+                            @endforeach
+                        </ul>
+                    @endif
+
                     <a href="{{ route('posts.show',$post->id) }}" class="card-link">View</a>
                 </div>
         </div><br>

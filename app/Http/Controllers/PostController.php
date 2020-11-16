@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Post;
 use App\User;
+use App\Tag;
 use App\Course;
 use App\Comment;
 
@@ -44,10 +45,11 @@ class PostController extends Controller
     public function create()
     {
         $courses =  Course::get();
+        $tags = Tag::get();
         foreach ($courses as $course) {
             $course->description = $course->name;
         }
-        return view('posts.create', compact('courses'));
+        return view('posts.create', compact('courses','tags'));
     }
 
     /**
@@ -69,7 +71,25 @@ class PostController extends Controller
         // End Attach post to user
         $post->save();
 
-        return redirect()->route('posts.index')->with('success', 'Post created successfully. It will be reviewed and published in no time.');
+        //for the pivot table
+/*         $seltag=$request->input('tags');
+        $tags=Tag::where('name','like',"$seltag")->get();
+        $tagscount=$tags->count();
+        $tagsarray=array(); 
+
+        
+        foreach($tags as $tag){
+
+            $tag_id=$tag->id;
+            $post->tags()->attach(1,array('tag_id'=>$tag_id));
+        }
+*/      $tags=array();
+        $tags= $request->input('tags');// arrays of role ids
+        $post->tags()->attach($tags);
+
+        //return $tags;
+
+        return redirect()->route('posts.index')->with('success', 'Post created successfully.It will be reviewed in no time');
     }
 
     /**
@@ -101,10 +121,11 @@ class PostController extends Controller
     public function edit(Post $post)
     {
         $courses =  Course::get();
+        $tags = Tag::get();
         foreach ($courses as $course) {
             $course->description = $course->name;
         }
-        return view('posts.edit', compact('post'), compact('courses'));
+        return view('posts.edit', compact('post'), compact('courses','tags'));
     }
 
     /**

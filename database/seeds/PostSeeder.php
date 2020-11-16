@@ -7,7 +7,7 @@ class PostSeeder extends Seeder
 {
     /**
      * Run the database seeds.
-     *
+     * 
      * @return void
      */
     public function run()
@@ -19,6 +19,7 @@ class PostSeeder extends Seeder
             'detail' => 'StatizenAsk is an educational networking tool dedicated to Strathmore University that will facilitate collaboration between both students and faculty. This tool will allow students to pose questions or discussions to the forum and receive feedback from their peers or faculty. With this, we aim to create an open and collaborative environment that would promote learning and student to faculty engagement.',
             'category'=> 'Bachelor of Informatics and Computer Science',
             'status' => 'published',
+            
         ],
         [
             'user_id' => '2',
@@ -444,6 +445,8 @@ class PostSeeder extends Seeder
                'category' => $post['category'],
                'status' => $post['status'],
              ]);
-           }
+
+            }
+
     }
 }

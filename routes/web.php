@@ -29,6 +29,12 @@ Route::get('/search', 'HomeController@search')->name('search');
 
 Route::get('/index_admin', 'PostController@index_admin')->name('index_admin');
 
+Route::resource('tags', 'TagController'); 
+
+Route::get('/search', 'TagController@search')->name('search');
+
+Route::get('/tags/{tag}','TagController@show')->name('show'); 
+
 Route::get('/update_status/{post}', 'PostController@update_status')->name('update_status');
 
 Route::get('/close_post/{post}', 'PostController@close_post')->name('close_post');
