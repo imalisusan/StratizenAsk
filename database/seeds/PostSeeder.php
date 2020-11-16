@@ -19,7 +19,6 @@ class PostSeeder extends Seeder
             'detail' => 'StatizenAsk is an educational networking tool dedicated to Strathmore University that will facilitate collaboration between both students and faculty. This tool will allow students to pose questions or discussions to the forum and receive feedback from their peers or faculty. With this, we aim to create an open and collaborative environment that would promote learning and student to faculty engagement.',
             'category'=> 'Bachelor of Informatics and Computer Science',
             'status' => 'published',
-            //'tags'=> ['1','2','4'],
             
         ],
         [
@@ -28,7 +27,6 @@ class PostSeeder extends Seeder
             'detail' => 'StatizenAsk is an educational networking tool dedicated to Strathmore University that will facilitate collaboration between both students and faculty. This tool will allow students to pose questions or discussions to the forum and receive feedback from their peers or faculty. With this, we aim to create an open and collaborative environment that would promote learning and student to faculty engagement.',
             'category'=> 'Bachelor of Business Science: Financial Engineering',
             'status' => 'published',
-            //'tags'=> ['1,2,3,4'],
         ],
         [
             'user_id' => '3',
@@ -36,7 +34,6 @@ class PostSeeder extends Seeder
             'detail' => 'StatizenAsk is an educational networking tool dedicated to Strathmore University that will facilitate collaboration between both students and faculty. This tool will allow students to pose questions or discussions to the forum and receive feedback from their peers or faculty. With this, we aim to create an open and collaborative environment that would promote learning and student to faculty engagement.',
             'category'=> 'Bachelor of Informatics and Computer Science',
             'status' => 'published',
-            //'tags'=> array(['1,2']),
         ],
         [
             'user_id' => '4',
@@ -51,7 +48,6 @@ class PostSeeder extends Seeder
             'detail' => 'StatizenAsk is an educational networking tool dedicated to Strathmore University that will facilitate collaboration between both students and faculty. This tool will allow students to pose questions or discussions to the forum and receive feedback from their peers or faculty. With this, we aim to create an open and collaborative environment that would promote learning and student to faculty engagement.',
             'category'=> 'Bachelor of Informatics and Computer Science',
             'status' => 'published',
-            //'tags'=> array(['1,2,3,4']),
         ],
         [
             'user_id' => '5',
@@ -59,7 +55,6 @@ class PostSeeder extends Seeder
             'detail' => 'StatizenAsk is an educational networking tool dedicated to Strathmore University that will facilitate collaboration between both students and faculty. This tool will allow students to pose questions or discussions to the forum and receive feedback from their peers or faculty. With this, we aim to create an open and collaborative environment that would promote learning and student to faculty engagement.',
             'category'=> 'Bachelor of Arts in Financial Services',
             'status' => 'published',
-            //'tags'=> array(['1,2,15']),
         ],
         [
             'user_id' => '1',
@@ -74,7 +69,6 @@ class PostSeeder extends Seeder
             'detail' => 'StatizenAsk is an educational networking tool dedicated to Strathmore University that will facilitate collaboration between both students and faculty. This tool will allow students to pose questions or discussions to the forum and receive feedback from their peers or faculty. With this, we aim to create an open and collaborative environment that would promote learning and student to faculty engagement.',
             'category'=> 'Bachelor of Commerce',
             'status' => 'published',
-            //'tags'=> array(['20']),
         ],
         [
             'user_id' => '6',
@@ -82,7 +76,6 @@ class PostSeeder extends Seeder
             'detail' => 'StatizenAsk is an educational networking tool dedicated to Strathmore University that will facilitate collaboration between both students and faculty. This tool will allow students to pose questions or discussions to the forum and receive feedback from their peers or faculty. With this, we aim to create an open and collaborative environment that would promote learning and student to faculty engagement.',
             'category'=> 'Bachelor of Commerce',
             'status' => 'published',
-            //'tags'=> array(['14']),
         ],
         [
             'user_id' => '1',
