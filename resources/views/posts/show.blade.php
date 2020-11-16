@@ -14,11 +14,11 @@
                     <p class="mb-0">Faculty: {{ $post->category }}</p>
                     <p class="mb-0">Author: {{  $author->name  }} </p>
 
-                @if (count($post->tags)>0)
+                @if (count($post->tags)>0) 
                     <p class="mb-0">Tags:</p>
-                    <ul class="list-group-horizontal">
+                    <ul class="list-group list-group-horizontal">
                         @foreach ($post->tags as $tag)
-                            <li class="list-group-item"><a href="{{ route ('show',['tag' => $tag] ) }}">{{$tag->name}}</a></li>
+                            <li class="list-group-item p-2 border-0"><a href="{{ route ('show',['tag' => $tag] ) }}">{{$tag->name}}</a></li>
                         @endforeach
                     </ul>
                 @endif

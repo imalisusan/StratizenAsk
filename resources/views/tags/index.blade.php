@@ -23,8 +23,10 @@
       @endforeach 
      @else
             <p>Nothing Found</p>
-      @endif
-
+      @endif   
+</div>
+<div>
+      {{$tags->links()}}
 </div>
 
 @endsection

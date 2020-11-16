@@ -10,7 +10,7 @@ class TagController extends Controller
 {
     public function index(Tag $tag = null)
     {
-       $tags=Tag::all()->sortBy('name');
+       $tags=Tag::orderBy('name')->paginate(12);
         $title='Tags';
         return view('tags.index')->with('tags',$tags);
     }
@@ -27,10 +27,7 @@ class TagController extends Controller
     public function show(Tag $tag = null)
     {   
         $posts = $tag->posts; 
-        //$tagname = $tag->name;
-        //return $posts;
-        //return view('tags.selected')->with('posts',$posts);
-        //return view('tags.selected')->with('posts',$posts); 
+ 
         return view('tags.selected', compact('posts','tag'));    
     }
 
