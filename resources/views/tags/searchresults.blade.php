@@ -2,7 +2,7 @@
 
 @section('content')
       <form class="form-inline my-2 my-lg-0 justify-content-end">
-      <input name="query" id="query" class="form-control mr-sm-2" value="{{ request()->input('query')}}" type="text" placeholder="Search Categories" aria-label="Search">
+      <input name="query" id="query" class="form-control mr-sm-2" value="{{ request()->input('query')}}" type="text" placeholder="Search Tags" aria-label="Search">
             <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
       </form>
 <div>
