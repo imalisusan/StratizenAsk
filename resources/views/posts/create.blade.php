@@ -39,9 +39,9 @@
         </div>  
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Category</strong>
+                <strong>Course</strong>
                     <select name="category" class="form-control">
-                        <option name="category">Select Category</option>
+                        <option name="category">Select Faculty</option>
                         @foreach($courses as $course)
                             <option name="category">
                                 {{ $course->description }}
@@ -50,6 +50,19 @@
                     </select><br>
             </div>  
         </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group" id="myDropdown">
+                <strong>Tags:</strong>
+                <select multiple  name ="tags[]" id="tags" class="form-control mdb-select md-form" searchable="Search here..">
+                    <option disabled selected>Select Tag</option>
+                    @foreach($tags as $tag)
+                        <option value={{$tag->id}}>
+                            {{ $tag->name }}
+                        </option>
+                    @endforeach
+                </select><br> 
+            </div>
+        </div>
         
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
@@ -57,5 +70,5 @@
         </div>
     </div>
 </form>
-    </div>
+</div>
 @endsection

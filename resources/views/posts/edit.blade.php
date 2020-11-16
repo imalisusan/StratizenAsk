@@ -40,7 +40,7 @@
             </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Category</strong>
+                    <strong>Faculty</strong>
                         <select name="category" class="form-control">
                           <option name="category">{{ $post->category }}</option>
                         @foreach($courses as $course)
@@ -50,6 +50,19 @@
                         @endforeach
                         </select><br>
                 </div>  
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group" id="myDropdown">
+                <strong>Tags:</strong>
+                <select name="tag"id="tag" class="form-control mdb-select md-form"onkeyup="filterFunction() multiple searchable="Search here..">
+                    <option name="tag" disabled selected>Select Tag</option>
+                    @foreach($tags as $category)
+                        <option name="category">
+                            {{ $category->name }}
+                        </option>
+                    @endforeach
+                </select><br>
+            </div>
         </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
               <button type="submit" class="btn btn-primary">Submit</button>
