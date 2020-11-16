@@ -4,9 +4,6 @@ use Illuminate\Database\Seeder;
 class PostTagSeeder extends Seeder {
     public function run()
     {
-        // Seeds the roles table
-        DB::table('tags')->delete();
-
         DB::table('post_tag')->insert(array(
         array('post_id' => 1, 'tag_id' => 1),
         array('post_id' => 2, 'tag_id' => 2),
