@@ -2,12 +2,7 @@
 @section('content')
     <div class="container">
     <div class="row">
-        <div class="col-lg-12 margin-tb">
-            <div class="pull-right">
-                <a class="btn btn-success" href="{{ route('posts.create') }}" style="background-color:#4B94FD; border: 0;"> Create New Post</a>
-            </div>
-
-        </div>
+       
     </div>
     @if ($message = Session::get('success'))
         <div class="alert alert-success">
@@ -15,10 +10,10 @@
         </div>
     @endif
     @foreach ($posts as $post)
-        <div class="card" style="width: 100%;">
+    <div class="card" style="width: 100%;">
                 <div class="card-body">
                     <h5 class="font-weight-bold mb-3">Title: {{ $post->title }}</h5>
-                    <p class="mb-0">Description: {{ $post->detail }}</p>
+                    <p class="mb-0">Deescription: {{ $post->detail }}</p>
                     <p class="mb-0">Category: {{ $post->category }}</p>
                     @if (count($post->tags)>0)
                         <p class="mb-0">Tags:</p>
@@ -37,7 +32,7 @@
                 <div class="card-body">
                     <a href="{{ route('posts.show',$post->id) }}" class="card-link">View</a>
                 </div>
-        </div>
+        </div><br>
 
     @endforeach
     {!! $posts->links() !!}

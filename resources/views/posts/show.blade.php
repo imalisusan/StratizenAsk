@@ -18,6 +18,11 @@
 
 @section('content')
     <div class="container">
+    @if ($message = Session::get('success'))
+        <div class="alert alert-success">
+            <p>{{ $message }}</p>
+        </div>
+    @endif
     <div class="card" style="width: 100%;">
                 <div class="card-body">
                     <h5 class="font-weight-bold mb-3">Title: {{ $post->title }}</h5>
@@ -55,11 +60,16 @@
                                 <a class="card-link" href="{{ route('update_status',$post->id) }}"style="color: #4B94FD;">Change Status</a>
                                 <a href="{{ route('index_admin') }}" class="card-link" style="color: #4B94FD;">Back</a>
                             @endrole
+                            @role('lecturer')
+                                <a class="card-link" href="{{ route('close_post',$post->id) }}"style="color: #4B94FD;">Close Post's Discussion</a>
+                                <a href="{{ route('posts.index') }}" class="card-link" style="color: #4B94FD;">Back</a>
+                            @endrole
                         @endif
                     @endguest
                 </div>
         </div><br>
-        <div class="comment-form">
+        @if ($post->closed_on == null)
+            <div class="comment-form">
                 <form action="{{ route('comments_store',$post->id) }}" method="GET">
                         <div class="col-md-12">
                             <label for="comment"><strong>Join the Discussion</strong></label>
@@ -70,6 +80,11 @@
                         </div>
                 </form>
             </div><br>
+        @else
+            <div class="alert alert-primary">
+                <p>This discussion is already closed. You cannot contribute. Please view the existing comments.</p>
+            </div><br>
+        @endif
         <div class="row">
         
             <div class="col-md-8 col-md-offset-2">           

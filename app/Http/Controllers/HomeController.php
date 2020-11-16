@@ -43,5 +43,12 @@ class HomeController extends Controller
     {
         return view('faq');
     }
+    public function search(Request $request)
+    {
+        $data = $request->all();
+        $key= $data["search"];
+        $posts = Post::search($key)->paginate(20);
+        return view('home', compact('posts'))->with('i', (request()->input('page', 1) - 1) * 20);
+    }
     
 }
