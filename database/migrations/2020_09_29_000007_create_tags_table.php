@@ -12,7 +12,7 @@ class CreateTagsTable extends Migration
      */
     public $tableName = 'tags';
 
-    /**
+    /** 
      * Run the migrations.
      * @table categories
      *
@@ -45,7 +45,7 @@ class CreateTagsTable extends Migration
      public function down()
      {
        Schema::dropIfExists($this->tableName);
-       Schema::dropIfExists('category_post');
+       Schema::dropIfExists('post_tag');
 
      }
 }
