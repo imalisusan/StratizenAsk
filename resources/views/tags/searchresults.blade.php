@@ -17,8 +17,10 @@
                         <h3 class="title"><a href="/tags/{{$tag->name}}">{{$tag->name}}</a></h3>
                         <p>{{$tag->description}}</p>
                   </div>
-            @endforeach
-            {!! $tags->links() !!}     
+            @endforeach     
+      </div>
+      <div>
+            {{$tags->links()}}
       </div>
 </div>
 

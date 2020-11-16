@@ -34,7 +34,7 @@ class TagController extends Controller
     public function search(Request $request)
     {
         $query=$request->input('query');
-        $tags = Tag::where('name','like',"%$query%")->get(); 
+        $tags = Tag::where('name','like',"%$query%")->paginate(12); 
         return view('tags.searchresults')->with('tags',$tags);
     }
 
