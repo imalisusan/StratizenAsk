@@ -43,6 +43,7 @@ class HomeController extends Controller
     {
         return view('faq');
     }
+<<<<<<< HEAD
     public function search(Request $request)
     {
         $data = $request->all();
@@ -50,5 +51,7 @@ class HomeController extends Controller
         $posts = Post::search($key)->paginate(20);
         return view('home', compact('posts'))->with('i', (request()->input('page', 1) - 1) * 20);
     }
+=======
+>>>>>>> parent of 4dfb59b... 00_Laravel search functionality 01_ FAQ UI modification
     
 }

@@ -25,8 +25,11 @@ Route::get('profile', 'HomeController@profile')->name('profile');
 
 Route::resource('posts', 'PostController');
 
+<<<<<<< HEAD
 Route::get('/search', 'HomeController@search')->name('search');
 
+=======
+>>>>>>> parent of 4dfb59b... 00_Laravel search functionality 01_ FAQ UI modification
 Route::get('/index_admin', 'PostController@index_admin')->name('index_admin');
 
 Route::get('/update_status/{post}', 'PostController@update_status')->name('update_status');
