@@ -8,6 +8,7 @@
 *,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
@@ -28,6 +29,9 @@
 =======
 *::before,
 >>>>>>> parent of 2915720... Merge pull request #38 from imalisusan/Whitneycommits
+=======
+*::before,
+>>>>>>> parent of c2a71cf... Merge pull request #39 from imalisusan/imali
 *::after{
   margin: 0;
   padding: 0;
@@ -55,6 +59,7 @@ section{
 	text-align: center;
 	font-size: 3.0rem;
 	background-color: white;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -98,6 +103,8 @@ section{
 >>>>>>> parent of b3212f6... Search box modification
 =======
 >>>>>>> parent of 2915720... Merge pull request #38 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of c2a71cf... Merge pull request #39 from imalisusan/imali
 }
 .container{
   width: 100%;
@@ -213,6 +220,7 @@ section{
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
@@ -227,6 +235,9 @@ section{
 =======
     <section>
 >>>>>>> parent of 2915720... Merge pull request #38 from imalisusan/Whitneycommits
+=======
+    <section>
+>>>>>>> parent of c2a71cf... Merge pull request #39 from imalisusan/imali
         
         <div class="container">
         <div class="accordion">
@@ -282,6 +293,7 @@ section{
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
               <p> Tags are used to help you identify questions that are interesting or relevant to you.Clicking on a tag allows yoy to see a description of what the tag is and how it should be applied on StratizenAsk.As a general rule, you should avoid creating new tags if possible, and new users are not allowed to create new tags. Even if you have sufficient reputation, you should only create new tags when you feel you can make a strong case that your question covers a new topic that nobody else has asked about before on this site.</p>
 =======
                Tags are used to help you identify questions that are interesting or relevant to you.Clicking on a tag allows yoy to see a description of what the tag is and how it should be applied on StratizenAsk.As a general rule, you should avoid creating new tags if possible, and new users are not allowed to create new tags. Even if you have sufficient reputation, you should only create new tags when you feel you can make a strong case that your question covers a new topic that nobody else has asked about before on this site.
@@ -289,6 +301,9 @@ section{
 =======
                Tags are used to help you identify questions that are interesting or relevant to you.Clicking on a tag allows yoy to see a description of what the tag is and how it should be applied on StratizenAsk.As a general rule, you should avoid creating new tags if possible, and new users are not allowed to create new tags. Even if you have sufficient reputation, you should only create new tags when you feel you can make a strong case that your question covers a new topic that nobody else has asked about before on this site.
 >>>>>>> parent of 2915720... Merge pull request #38 from imalisusan/Whitneycommits
+=======
+               Tags are used to help you identify questions that are interesting or relevant to you.Clicking on a tag allows yoy to see a description of what the tag is and how it should be applied on StratizenAsk.As a general rule, you should avoid creating new tags if possible, and new users are not allowed to create new tags. Even if you have sufficient reputation, you should only create new tags when you feel you can make a strong case that your question covers a new topic that nobody else has asked about before on this site.
+>>>>>>> parent of c2a71cf... Merge pull request #39 from imalisusan/imali
 
 =======
                Tags are used to help you identify questions that are interesting or relevant to you.Clicking on a tag allows yoy to see a description of what the tag is and how it should be applied on StratizenAsk.As a general rule, you should avoid creating new tags if possible, and new users are not allowed to create new tags. Even if you have sufficient reputation, you should only create new tags when you feel you can make a strong case that your question covers a new topic that nobody else has asked about before on this site.
@@ -332,6 +347,7 @@ section{
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
     </section>
@@ -342,6 +358,9 @@ section{
 =======
     </section>
 >>>>>>> parent of 2915720... Merge pull request #38 from imalisusan/Whitneycommits
+=======
+    </section>
+>>>>>>> parent of c2a71cf... Merge pull request #39 from imalisusan/imali
     @endsection
 </body>
 </html>

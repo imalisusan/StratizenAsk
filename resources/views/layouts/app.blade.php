@@ -23,6 +23,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
 =======
 >>>>>>> parent of 8277eee... 01_Final search outlook
@@ -32,6 +33,8 @@
 >>>>>>> parent of b3212f6... Search box modification
 =======
 >>>>>>> parent of 2915720... Merge pull request #38 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of c2a71cf... Merge pull request #39 from imalisusan/imali
     
 </head>
 <body>
@@ -48,6 +51,7 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -71,6 +75,11 @@
                     <input type="text" class="form-control form-control-sm ml-3 w-75" name="search"  placeholder="Search StratizenAsk" style="text-align:center;width:650px;height:25px; margin-top:5px; border: 1px solid #A0AEC0; marg">
                     <i class="fas fa-search" aria-hidden="true"></i>
 >>>>>>> parent of 8277eee... 01_Final search outlook
+=======
+                    <ul class="navbar-nav mr-auto">
+                    <form class="flex" action="{{ route('search') }}" method="GET">
+                    <input type="text" class="" name="search"  placeholder="Search StratizenAsk" style="width:250px;height:30px; margin-top:20px; border: 1px solid #A0AEC0; marg">
+>>>>>>> parent of c2a71cf... Merge pull request #39 from imalisusan/imali
                     </form>
 =======
                     <ul class="navbar-nav mr-auto">
