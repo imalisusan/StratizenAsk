@@ -874,11 +874,16 @@
             "faker",
             "fixtures"
 <<<<<<< HEAD
+<<<<<<< HEAD
         ],
         "abandoned": true
 =======
         ]
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+        ],
+        "abandoned": true
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
     },
     {
         "name": "guzzlehttp/guzzle",
@@ -1925,6 +1930,9 @@
     },
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
         "name": "munafio/chatify",
         "version": "v1.0.1",
         "version_normalized": "1.0.1.0",
@@ -1983,8 +1991,11 @@
         ]
     },
     {
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
         "name": "myclabs/deep-copy",
         "version": "1.10.1",
         "version_normalized": "1.10.1.0",
@@ -2084,6 +2095,9 @@
                 "includes": [
                     "extension.neon"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
                 ]
             }
         },
@@ -2209,14 +2223,18 @@
             "laravel": {
                 "providers": [
                     "NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider"
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
                 ]
             }
         },
         "installation-source": "dist",
         "autoload": {
             "psr-4": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
                 "Carbon\\": "src/Carbon/"
@@ -2345,6 +2363,8 @@
         "autoload": {
             "psr-4": {
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
                 "NunoMaduro\\Collision\\": "src/"
             }
         },
@@ -2484,6 +2504,9 @@
     },
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
         "name": "paragonie/sodium_compat",
         "version": "v1.13.0",
         "version_normalized": "1.13.0.0",
@@ -2568,8 +2591,11 @@
         ]
     },
     {
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
         "name": "phar-io/manifest",
         "version": "1.0.3",
         "version_normalized": "1.0.3.0",
@@ -3775,6 +3801,9 @@
     },
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
         "name": "pusher/pusher-php-server",
         "version": "v3.4.1",
         "version_normalized": "3.4.1.0",
@@ -3831,8 +3860,11 @@
         ]
     },
     {
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
         "name": "ralouphie/getallheaders",
         "version": "3.0.3",
         "version_normalized": "3.0.3.0",

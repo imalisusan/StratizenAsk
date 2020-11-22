@@ -45,6 +45,7 @@ class HomeController extends Controller
         return view('faq');
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function search(Request $request)
     {
         $data = $request->all();
@@ -54,6 +55,8 @@ class HomeController extends Controller
     }
 =======
 >>>>>>> parent of 4dfb59b... 00_Laravel search functionality 01_ FAQ UI modification
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
     
 =======
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits

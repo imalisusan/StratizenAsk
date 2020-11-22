@@ -5,10 +5,14 @@
         "This file is @generated automatically"
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     "content-hash": "76c832e72caa2712bf569b2f12f1674e",
 =======
     "content-hash": "e3c153d98a433156e15ddd7b8b23825b",
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+    "content-hash": "76c832e72caa2712bf569b2f12f1674e",
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -107,6 +111,7 @@
                 "math"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "funding": [
                 {
@@ -115,6 +120,8 @@
                 }
             ],
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-08-18T23:57:15+00:00"
         },
         {
@@ -226,6 +233,7 @@
                 "words"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "funding": [
                 {
@@ -242,6 +250,8 @@
                 }
             ],
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-05-29T15:13:26+00:00"
         },
         {
@@ -305,6 +315,7 @@
                 "php"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "funding": [
                 {
@@ -321,6 +332,8 @@
                 }
             ],
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-05-25T17:44:05+00:00"
         },
         {
@@ -555,6 +568,7 @@
                 "laravel"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "funding": [
                 {
@@ -563,6 +577,8 @@
                 }
             ],
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-09-07T11:48:52+00:00"
         },
         {
@@ -1207,6 +1223,7 @@
                 "parser"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "funding": [
                 {
@@ -1235,6 +1252,8 @@
                 }
             ],
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-09-13T14:44:46+00:00"
         },
         {
@@ -1321,6 +1340,7 @@
                 "storage"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "funding": [
                 {
@@ -1329,6 +1349,8 @@
                 }
             ],
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-08-23T07:39:11+00:00"
         },
         {
@@ -1371,6 +1393,7 @@
             ],
             "description": "Mime-type detection for Flysystem",
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "funding": [
                 {
@@ -1383,6 +1406,8 @@
                 }
             ],
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-09-21T18:10:53+00:00"
         },
         {
@@ -1465,6 +1490,7 @@
                 "psr-3"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "funding": [
                 {
@@ -1477,6 +1503,8 @@
                 }
             ],
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-07-23T08:41:23+00:00"
         },
         {
@@ -1667,6 +1695,7 @@
                 "time"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "funding": [
                 {
@@ -1679,6 +1708,8 @@
                 }
             ],
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-09-23T08:17:37+00:00"
         },
         {
@@ -1839,6 +1870,9 @@
             ],
             "time": "2018-07-02T15:55:56+00:00"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
         },
         {
             "name": "paragonie/sodium_compat",
@@ -1978,6 +2012,7 @@
                 "type"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "funding": [
                 {
@@ -1990,6 +2025,8 @@
                 }
             ],
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-07-20T17:29:33+00:00"
         },
         {
@@ -2139,6 +2176,7 @@
                 "x509"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "funding": [
                 {
@@ -2155,6 +2193,8 @@
                 }
             ],
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-09-08T04:24:43+00:00"
         },
         {
@@ -2628,6 +2668,7 @@
                 "set"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "funding": [
                 {
@@ -2636,6 +2677,8 @@
                 }
             ],
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-09-10T20:58:17+00:00"
         },
         {
@@ -2718,6 +2761,7 @@
                 "uuid"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "funding": [
                 {
@@ -2726,6 +2770,8 @@
                 }
             ],
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-08-18T17:17:46+00:00"
         },
         {
@@ -2792,6 +2838,7 @@
                 "roles"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "funding": [
                 {
@@ -2800,6 +2847,8 @@
                 }
             ],
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-09-15T13:30:03+00:00"
         },
         {
@@ -2942,6 +2991,7 @@
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "funding": [
                 {
@@ -2958,6 +3008,8 @@
                 }
             ],
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-09-18T14:27:32+00:00"
         },
         {
@@ -3012,6 +3064,7 @@
             "description": "Symfony CssSelector Component",
             "homepage": "https://symfony.com",
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "funding": [
                 {
@@ -3028,6 +3081,8 @@
                 }
             ],
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-05-20T17:43:50+00:00"
         },
         {
@@ -3079,6 +3134,7 @@
             "description": "A generic function and convention to trigger deprecation notices",
             "homepage": "https://symfony.com",
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "funding": [
                 {
@@ -3095,6 +3151,8 @@
                 }
             ],
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-09-07T11:33:47+00:00"
         },
         {
@@ -3153,6 +3211,7 @@
             "description": "Symfony ErrorHandler Component",
             "homepage": "https://symfony.com",
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "funding": [
                 {
@@ -3169,6 +3228,8 @@
                 }
             ],
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-09-27T03:44:28+00:00"
         },
         {
@@ -3243,6 +3304,7 @@
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "funding": [
                 {
@@ -3259,6 +3321,8 @@
                 }
             ],
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-09-18T14:27:32+00:00"
         },
         {
@@ -3322,6 +3386,7 @@
                 "standards"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "funding": [
                 {
@@ -3338,6 +3403,8 @@
                 }
             ],
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-09-07T11:33:47+00:00"
         },
         {
@@ -3388,6 +3455,7 @@
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "funding": [
                 {
@@ -3404,6 +3472,8 @@
                 }
             ],
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-09-02T16:23:27+00:00"
         },
         {
@@ -3466,6 +3536,7 @@
                 "standards"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "funding": [
                 {
@@ -3482,6 +3553,8 @@
                 }
             ],
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-09-07T11:33:47+00:00"
         },
         {
@@ -3544,6 +3617,7 @@
             "description": "Symfony HttpFoundation Component",
             "homepage": "https://symfony.com",
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "funding": [
                 {
@@ -3560,6 +3634,8 @@
                 }
             ],
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-09-13T05:01:27+00:00"
         },
         {
@@ -3661,6 +3737,7 @@
             "description": "Symfony HttpKernel Component",
             "homepage": "https://symfony.com",
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "funding": [
                 {
@@ -3677,6 +3754,8 @@
                 }
             ],
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-09-27T04:33:19+00:00"
         },
         {
@@ -3741,6 +3820,7 @@
                 "mime-type"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "funding": [
                 {
@@ -3757,6 +3837,8 @@
                 }
             ],
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-09-02T16:23:27+00:00"
         },
         {
@@ -3820,6 +3902,7 @@
                 "portable"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "funding": [
                 {
@@ -3836,6 +3919,8 @@
                 }
             ],
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-07-14T12:35:20+00:00"
         },
         {
@@ -3900,6 +3985,7 @@
                 "shim"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "funding": [
                 {
@@ -3916,6 +4002,8 @@
                 }
             ],
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-07-14T12:35:20+00:00"
         },
         {
@@ -3981,6 +4069,7 @@
                 "shim"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "funding": [
                 {
@@ -3997,6 +4086,8 @@
                 }
             ],
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-07-14T12:35:20+00:00"
         },
         {
@@ -4069,6 +4160,7 @@
                 "shim"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "funding": [
                 {
@@ -4085,6 +4177,8 @@
                 }
             ],
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-08-04T06:02:08+00:00"
         },
         {
@@ -4153,6 +4247,7 @@
                 "shim"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "funding": [
                 {
@@ -4169,6 +4264,8 @@
                 }
             ],
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-07-14T12:35:20+00:00"
         },
         {
@@ -4233,21 +4330,70 @@
                 "shim"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
+=======
+            "time": "2020-07-14T12:35:20+00:00"
+        },
+        {
+            "name": "symfony/polyfill-php70",
+            "version": "v1.18.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-php70.git",
+                "reference": "0dd93f2c578bdc9c72697eaa5f1dd25644e618d3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-php70/zipball/0dd93f2c578bdc9c72697eaa5f1dd25644e618d3",
+                "reference": "0dd93f2c578bdc9c72697eaa5f1dd25644e618d3",
+                "shasum": ""
+            },
+            "require": {
+                "paragonie/random_compat": "~1.0|~2.0|~9.99",
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.18-dev"
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php70\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ],
+                "classmap": [
+                    "Resources/stubs"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
                 },
                 {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-07-14T12:35:20+00:00"
         },
@@ -4351,6 +4497,8 @@
                 }
             ],
 <<<<<<< HEAD
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "description": "Symfony polyfill backporting some PHP 7.0+ features to lower PHP versions",
             "homepage": "https://symfony.com",
             "keywords": [
@@ -4359,8 +4507,11 @@
                 "portable",
                 "shim"
             ],
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-07-14T12:35:20+00:00"
         },
         {
@@ -4421,6 +4572,7 @@
                 "shim"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "funding": [
                 {
@@ -4437,6 +4589,8 @@
                 }
             ],
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-07-14T12:35:20+00:00"
         },
         {
@@ -4500,6 +4654,7 @@
                 "shim"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "funding": [
                 {
@@ -4516,6 +4671,8 @@
                 }
             ],
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-07-14T12:35:20+00:00"
         },
         {
@@ -4583,6 +4740,7 @@
                 "shim"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "funding": [
                 {
@@ -4599,6 +4757,8 @@
                 }
             ],
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-07-14T12:35:20+00:00"
         },
         {
@@ -4650,6 +4810,7 @@
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "funding": [
                 {
@@ -4666,6 +4827,8 @@
                 }
             ],
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-09-02T16:23:27+00:00"
         },
         {
@@ -4745,6 +4908,7 @@
                 "url"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "funding": [
                 {
@@ -4761,6 +4925,8 @@
                 }
             ],
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-09-02T16:23:27+00:00"
         },
         {
@@ -4824,6 +4990,7 @@
                 "standards"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "funding": [
                 {
@@ -4840,6 +5007,8 @@
                 }
             ],
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-09-07T11:33:47+00:00"
         },
         {
@@ -4912,6 +5081,7 @@
                 "utf8"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "funding": [
                 {
@@ -4928,6 +5098,8 @@
                 }
             ],
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-09-15T12:23:47+00:00"
         },
         {
@@ -5007,6 +5179,7 @@
             "description": "Symfony Translation Component",
             "homepage": "https://symfony.com",
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "funding": [
                 {
@@ -5023,6 +5196,8 @@
                 }
             ],
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-09-27T03:44:28+00:00"
         },
         {
@@ -5085,6 +5260,7 @@
                 "standards"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "funding": [
                 {
@@ -5101,6 +5277,8 @@
                 }
             ],
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-09-07T11:33:47+00:00"
         },
         {
@@ -5178,6 +5356,7 @@
                 "dump"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "funding": [
                 {
@@ -5194,6 +5373,8 @@
                 }
             ],
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-09-18T14:27:32+00:00"
         },
         {
@@ -5308,6 +5489,7 @@
                 "environment"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "funding": [
                 {
@@ -5320,6 +5502,8 @@
                 }
             ],
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-07-14T19:22:52+00:00"
         },
         {
@@ -5369,6 +5553,7 @@
                 "php"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "funding": [
                 {
@@ -5393,6 +5578,8 @@
                 }
             ],
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-07-22T23:32:04+00:00"
         }
     ],
@@ -5452,6 +5639,7 @@
                 "instantiate"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "funding": [
                 {
@@ -5468,6 +5656,8 @@
                 }
             ],
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-05-29T17:27:14+00:00"
         },
         {
@@ -5524,6 +5714,7 @@
                 "reporting"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "funding": [
                 {
@@ -5532,6 +5723,8 @@
                 }
             ],
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-09-18T06:35:11+00:00"
         },
         {
@@ -5925,6 +6118,7 @@
                 "object graph"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "funding": [
                 {
@@ -5933,6 +6127,8 @@
                 }
             ],
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-06-29T13:22:24+00:00"
         },
         {
@@ -6004,6 +6200,7 @@
                 "symfony"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "funding": [
                 {
@@ -6020,6 +6217,8 @@
                 }
             ],
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-04-04T19:56:08+00:00"
         },
         {
@@ -6668,6 +6867,9 @@
                 "xunit"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-06-22T07:06:58+00:00"
         },
         {
@@ -6697,6 +6899,7 @@
             },
             "suggest": {
                 "ext-dom": "Needed to make use of the features in the utilities namespace"
+<<<<<<< HEAD
             },
             "type": "library",
             "autoload": {
@@ -6708,6 +6911,19 @@
                     "HighlightUtilities/functions.php"
                 ]
             },
+=======
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Highlight\\": "",
+                    "HighlightUtilities\\": ""
+                },
+                "files": [
+                    "HighlightUtilities/functions.php"
+                ]
+            },
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
@@ -6718,9 +6934,12 @@
                     "homepage": "http://www.scrivo.org/",
                     "role": "Project Author"
                 },
+<<<<<<< HEAD
 =======
             "funding": [
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
                 {
                     "name": "Vladimir Jimenez",
                     "homepage": "https://allejo.io",
@@ -6730,6 +6949,7 @@
                     "name": "Martin Folkers",
                     "homepage": "https://twobrain.io",
                     "role": "Contributor"
+<<<<<<< HEAD
                 }
             ],
 <<<<<<< HEAD
@@ -6813,6 +7033,18 @@
                 }
             ],
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+                }
+            ],
+            "description": "Server side syntax highlighter that supports 185 languages. It's a PHP port of highlight.js",
+            "keywords": [
+                "code",
+                "highlight",
+                "highlight.js",
+                "highlight.php",
+                "syntax"
+            ],
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-08-27T03:24:44+00:00"
         },
         {
@@ -7469,6 +7701,7 @@
             ],
             "description": "A small library for converting tokenized PHP source code into XML and potentially other formats",
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "funding": [
                 {
@@ -7477,6 +7710,8 @@
                 }
             ],
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
             "time": "2020-07-12T23:59:07+00:00"
         },
         {

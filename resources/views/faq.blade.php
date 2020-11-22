@@ -3,12 +3,15 @@
 <head>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <style>
 *,
 
 =======
 =======
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>FAQs</title>
@@ -23,6 +26,7 @@
   box-sizing: inherit;
 }
 html{
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	font-family: 'Sans';
@@ -45,6 +49,12 @@ html{
   box-sizing: border-box;
 }
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  box-sizing: border-box;
+}
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
 section{
   width: 100%;
   height: 100vh;
@@ -58,9 +68,12 @@ section{
   font-size: 3.0rem;
   background-color: coral;
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> parent of 4dfb59b... 00_Laravel search functionality 01_ FAQ UI modification
 =======
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
 }
 .container{
   width: 100%;
@@ -96,6 +109,7 @@ section{
 .answer{
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	max-height: 0;
 	overflow: hidden;
 	position: relative;
@@ -110,6 +124,8 @@ section{
 =======
 =======
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
   max-height: 0;
   overflow: hidden;
   position: relative;
@@ -133,9 +149,12 @@ section{
   color: rgba(255,255,255,0);
   padding: 2rem;
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> parent of 4dfb59b... 00_Laravel search functionality 01_ FAQ UI modification
 =======
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
 }
 .accordion-item:target .accordion-link .ion-md-add{
   display: none;
@@ -153,11 +172,14 @@ section{
 @section('content')
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 =======
 =======
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
     <section>
 >>>>>>> parent of 4dfb59b... 00_Laravel search functionality 01_ FAQ UI modification
         
@@ -211,6 +233,7 @@ section{
                 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
               <p> Tags are used to help you identify questions that are interesting or relevant to you.Clicking on a tag allows yoy to see a description of what the tag is and how it should be applied on StratizenAsk.As a general rule, you should avoid creating new tags if possible, and new users are not allowed to create new tags. Even if you have sufficient reputation, you should only create new tags when you feel you can make a strong case that your question covers a new topic that nobody else has asked about before on this site.</p>
 
 =======
@@ -219,6 +242,9 @@ section{
 =======
                Tags are used to help you identify questions that are interesting or relevant to you.Clicking on a tag allows yoy to see a description of what the tag is and how it should be applied on StratizenAsk.As a general rule, you should avoid creating new tags if possible, and new users are not allowed to create new tags. Even if you have sufficient reputation, you should only create new tags when you feel you can make a strong case that your question covers a new topic that nobody else has asked about before on this site.
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+               Tags are used to help you identify questions that are interesting or relevant to you.Clicking on a tag allows yoy to see a description of what the tag is and how it should be applied on StratizenAsk.As a general rule, you should avoid creating new tags if possible, and new users are not allowed to create new tags. Even if you have sufficient reputation, you should only create new tags when you feel you can make a strong case that your question covers a new topic that nobody else has asked about before on this site.
+>>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
                   
               </div>
             </div>
