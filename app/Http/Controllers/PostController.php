@@ -9,7 +9,6 @@ use App\Comment;
 
 use Illuminate\Http\Request;
 use App\Http\Requests\StorePostRequest;
-use Carbon\Carbon;
 
 class PostController extends Controller
 {
@@ -142,18 +141,6 @@ class PostController extends Controller
         $post->category = $data["category"];
         $post->update();
         return redirect()->route('posts.index')->with('success', 'Post updated successfully');
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Post  $post
-     * @return \Illuminate\Http\Response
-     */
-    public function close_post(Post $post){
-        $post->closed_on = Carbon::now();
-        $post->update();
-        return redirect()->route('posts.index')->with('success', 'Post closed successfully');
     }
 
     /**

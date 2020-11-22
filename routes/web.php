@@ -44,8 +44,6 @@ Route::get('/index_admin', 'PostController@index_admin')->name('index_admin');
 
 Route::get('/update_status/{post}', 'PostController@update_status')->name('update_status');
 
-Route::get('/close_post/{post}', 'PostController@close_post')->name('close_post');
-
 Route::resource('/admin-panel/users', 'UserController'); 
 
 Route::resource('/admin-panel/courses', 'CourseController'); 
