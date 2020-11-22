@@ -7,11 +7,12 @@ use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Laratrust\Traits\LaratrustUserTrait;
+use Laravel\Scout\Searchable;
 
 
 class User extends Authenticatable
 {
-    use Notifiable;
+    use Notifiable, Searchable;
     use LaratrustUserTrait;
 
     /**
@@ -45,12 +46,19 @@ class User extends Authenticatable
     {
         return $this->hasMany(Post::class);
     }
+    
     public function course()
     {
         return $this->belongsTo(Course::class);
     }
+
     public function comments()
     {
         return $this->hasMany(Comment::class);
+    }
+
+    public function searchableAs()
+    {
+        return 'users';
     }
 }
