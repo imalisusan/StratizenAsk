@@ -21,11 +21,14 @@
     <link href="{{ asset(mix('laratrust.css', 'vendor/laratrust')) }}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
 
    
 =======
 >>>>>>> parent of b3212f6... Search box modification
+=======
+>>>>>>> parent of 2915720... Merge pull request #38 from imalisusan/Whitneycommits
     
 </head>
 <body>
@@ -52,7 +55,10 @@
                     <ul class="navbar-nav mr-auto">
                     <form class="flex" action="{{ route('search') }}" method="GET">
                     <input type="text" class="" name="search"  placeholder="Search StratizenAsk" style="width:250px;height:30px; margin-top:20px; border: 1px solid #A0AEC0; marg">
+<<<<<<< HEAD
 >>>>>>> parent of b3212f6... Search box modification
+=======
+>>>>>>> parent of 2915720... Merge pull request #38 from imalisusan/Whitneycommits
                     </form>
 =======
                     <ul class="navbar-nav mr-auto">

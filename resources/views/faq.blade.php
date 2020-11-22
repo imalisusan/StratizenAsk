@@ -7,6 +7,7 @@
 <style>
 *,
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
@@ -24,6 +25,9 @@
 =======
 *::before,
 >>>>>>> parent of b3212f6... Search box modification
+=======
+*::before,
+>>>>>>> parent of 2915720... Merge pull request #38 from imalisusan/Whitneycommits
 *::after{
   margin: 0;
   padding: 0;
@@ -51,6 +55,7 @@ section{
 	text-align: center;
 	font-size: 3.0rem;
 	background-color: white;
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 =======
@@ -91,6 +96,8 @@ section{
 >>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
 =======
 >>>>>>> parent of b3212f6... Search box modification
+=======
+>>>>>>> parent of 2915720... Merge pull request #38 from imalisusan/Whitneycommits
 }
 .container{
   width: 100%;
@@ -205,6 +212,7 @@ section{
 <<<<<<< HEAD
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
@@ -216,6 +224,9 @@ section{
 =======
     <section>
 >>>>>>> parent of b3212f6... Search box modification
+=======
+    <section>
+>>>>>>> parent of 2915720... Merge pull request #38 from imalisusan/Whitneycommits
         
         <div class="container">
         <div class="accordion">
@@ -270,10 +281,14 @@ section{
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
               <p> Tags are used to help you identify questions that are interesting or relevant to you.Clicking on a tag allows yoy to see a description of what the tag is and how it should be applied on StratizenAsk.As a general rule, you should avoid creating new tags if possible, and new users are not allowed to create new tags. Even if you have sufficient reputation, you should only create new tags when you feel you can make a strong case that your question covers a new topic that nobody else has asked about before on this site.</p>
 =======
                Tags are used to help you identify questions that are interesting or relevant to you.Clicking on a tag allows yoy to see a description of what the tag is and how it should be applied on StratizenAsk.As a general rule, you should avoid creating new tags if possible, and new users are not allowed to create new tags. Even if you have sufficient reputation, you should only create new tags when you feel you can make a strong case that your question covers a new topic that nobody else has asked about before on this site.
 >>>>>>> parent of b3212f6... Search box modification
+=======
+               Tags are used to help you identify questions that are interesting or relevant to you.Clicking on a tag allows yoy to see a description of what the tag is and how it should be applied on StratizenAsk.As a general rule, you should avoid creating new tags if possible, and new users are not allowed to create new tags. Even if you have sufficient reputation, you should only create new tags when you feel you can make a strong case that your question covers a new topic that nobody else has asked about before on this site.
+>>>>>>> parent of 2915720... Merge pull request #38 from imalisusan/Whitneycommits
 
 =======
                Tags are used to help you identify questions that are interesting or relevant to you.Clicking on a tag allows yoy to see a description of what the tag is and how it should be applied on StratizenAsk.As a general rule, you should avoid creating new tags if possible, and new users are not allowed to create new tags. Even if you have sufficient reputation, you should only create new tags when you feel you can make a strong case that your question covers a new topic that nobody else has asked about before on this site.
@@ -316,6 +331,7 @@ section{
         </div>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
     </section>
@@ -323,6 +339,9 @@ section{
 =======
     </section>
 >>>>>>> parent of b3212f6... Search box modification
+=======
+    </section>
+>>>>>>> parent of 2915720... Merge pull request #38 from imalisusan/Whitneycommits
     @endsection
 </body>
 </html>
