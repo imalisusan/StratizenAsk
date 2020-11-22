@@ -81,7 +81,7 @@
                         <a class="" href="{{ route('users.index') }}">Users</a>
                     @endrole
                     <div id="search" style="margin-top:40px;">
-                    <input type="text" placeholder="Search StratizenAsk" style="width:600px;height:60px;margin-bottom:20px;border: 1px solid #A0AEC0;" class=""><br>
+                    <input type="text" placeholder="Search StratizenAsk" style="width:600px;height:60px;margin-bottom:20px;border: 1px solid #A0AEC0; padding:20px;" class=""><br>
                     <input type="submit" value="Search" class="btn btn-primary" style="background-color:#5E57D4; border: 1px solid #5E57D4; ">
                     </div>
                     <div class="title m-b-md">
