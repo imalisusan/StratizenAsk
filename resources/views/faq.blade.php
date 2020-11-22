@@ -6,6 +6,7 @@
 <<<<<<< HEAD
 <style>
 *,
+<<<<<<< HEAD
 
 =======
 =======
@@ -20,6 +21,9 @@
         *,
 *::before,
 >>>>>>> parent of 4dfb59b... 00_Laravel search functionality 01_ FAQ UI modification
+=======
+*::before,
+>>>>>>> parent of b3212f6... Search box modification
 *::after{
   margin: 0;
   padding: 0;
@@ -30,13 +34,24 @@ html{
 <<<<<<< HEAD
 <<<<<<< HEAD
 	font-family: 'Sans';
-	font-size: 15px;
+	font-size: 10px;
 	box-sizing: border-box;
 }
+
+section{
+	width: 100%;
+	height: 100vh;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .accordion{
 	text-align: center;
-	font-size: 1.6rem;
+	font-size: 3.0rem;
 	background-color: white;
+<<<<<<< HEAD
 
 =======
   font-family: 'Roboto', sans-serif;
@@ -74,6 +89,8 @@ section{
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
 =======
 >>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
+=======
+>>>>>>> parent of b3212f6... Search box modification
 }
 .container{
   width: 100%;
@@ -113,13 +130,26 @@ section{
 	max-height: 0;
 	overflow: hidden;
 	position: relative;
-	background-color: lightblue;
-  transition: max-height 1000ms;
-	font-size: 15px;
+	background-color: antiquewhite;
+	transition: max-height 1000ms;
+	font-size: 2.5rem;
 }
+
+.answer::before{
+	content: "";
+	position: absolute;
+	width: .6rem;
+	height: 100%;
+	background-color: black;
+	top: 50%
+	left:0;
+	transform: translateY(-50%);
+	font-size: 2.5rem;
+}
+
 .answer p{
-	font-size: 15px;
-	font-color:white;
+	font-size: 2.5rem;
+	color: rgba(255,255,255,0);
 	padding: 2rem;
 =======
 =======
@@ -174,6 +204,7 @@ section{
 <<<<<<< HEAD
 <<<<<<< HEAD
 
+<<<<<<< HEAD
 
 =======
 =======
@@ -182,19 +213,23 @@ section{
 >>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
     <section>
 >>>>>>> parent of 4dfb59b... 00_Laravel search functionality 01_ FAQ UI modification
+=======
+    <section>
+>>>>>>> parent of b3212f6... Search box modification
         
         <div class="container">
         <div class="accordion">
              <h1>Frequently Asked Questions(FAQs)</h1>
             <div class="accordion-item" id="question1">
                 <a class="accordion-link" href="#question1">
-                   What does it mean if a question is closed?
+                  
+                What does it mean if a question is closed?
                 <i class="icon ion-md-add"></i>
                 <i class="icon ion-md-remove"></i>
               </a>  
               <div class="answer">
                 
-               <p> Closed questions cannot be answered, but can be edited to make them eligible for reopening. If your question is closed, you will receive private feedback on the reason why it was closed.</p>
+                Closed questions cannot be answered, but can be edited to make them eligible for reopening. If your question is closed, you will receive private feedback on the reason why it was closed.
                   
               </div>
             </div>
@@ -207,7 +242,7 @@ section{
               </a>  
               <div class="answer">
                 
-               <p> When a user receives a good answer to their question, that user has the option to "accept" an answer. Acceptance is indicated by a colored checkmark next to the answer that has been accepted by the original author of the question.</p>
+                When a user receives a good answer to their question, that user has the option to "accept" an answer. Acceptance is indicated by a colored checkmark next to the answer that has been accepted by the original author of the question.
                  
               </div>
             </div>
@@ -219,7 +254,7 @@ section{
               </a>  
               <div class="answer">
                 
-               <p>Questions that are extremely off topic, or of very low quality, may be removed at the discretion of the community and moderators.<p>
+               Questions that are extremely off topic, or of very low quality, may be removed at the discretion of the community and moderators.
                   
               </div>
             </div>
@@ -234,7 +269,11 @@ section{
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
               <p> Tags are used to help you identify questions that are interesting or relevant to you.Clicking on a tag allows yoy to see a description of what the tag is and how it should be applied on StratizenAsk.As a general rule, you should avoid creating new tags if possible, and new users are not allowed to create new tags. Even if you have sufficient reputation, you should only create new tags when you feel you can make a strong case that your question covers a new topic that nobody else has asked about before on this site.</p>
+=======
+               Tags are used to help you identify questions that are interesting or relevant to you.Clicking on a tag allows yoy to see a description of what the tag is and how it should be applied on StratizenAsk.As a general rule, you should avoid creating new tags if possible, and new users are not allowed to create new tags. Even if you have sufficient reputation, you should only create new tags when you feel you can make a strong case that your question covers a new topic that nobody else has asked about before on this site.
+>>>>>>> parent of b3212f6... Search box modification
 
 =======
                Tags are used to help you identify questions that are interesting or relevant to you.Clicking on a tag allows yoy to see a description of what the tag is and how it should be applied on StratizenAsk.As a general rule, you should avoid creating new tags if possible, and new users are not allowed to create new tags. Even if you have sufficient reputation, you should only create new tags when you feel you can make a strong case that your question covers a new topic that nobody else has asked about before on this site.
@@ -257,7 +296,7 @@ section{
               </a>  
               <div class="answer">
                 
-              <p>Yes! StratizenAsk has always explicitly encouraged users to answer their own questions. If you have a question that you already know the answer to, and you would like to document that knowledge in public so that others (including yourself) can find it later, it's perfectly okay to ask and answer your own question on this site.</p>
+              Yes! StratizenAsk has always explicitly encouraged users to answer their own questions. If you have a question that you already know the answer to, and you would like to document that knowledge in public so that others (including yourself) can find it later, it's perfectly okay to ask and answer your own question on this site.
                   
               </div>
             </div>
@@ -269,17 +308,21 @@ section{
               </a>  
               <div class="answer">
                 
-             <p> We generally expect that the faculty: Are patient and fair, lead by example, show respect for their fellow community members in their actions and words, are open to some light but firm moderation to keep the community on track and resolve (hopefully) uncommon disputes and exceptions.</p>
+              We generally expect that the faculty: Are patient and fair, lead by example, show respect for their fellow community members in their actions and words, are open to some light but firm moderation to keep the community on track and resolve (hopefully) uncommon disputes and exceptions
                   
               </div>
             </div>
         </div>  
         </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
     </section>
 >>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+=======
+    </section>
+>>>>>>> parent of b3212f6... Search box modification
     @endsection
 </body>
 </html>

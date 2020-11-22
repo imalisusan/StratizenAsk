@@ -11,7 +11,6 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -21,9 +20,12 @@
     <!-- Styles -->
     <link href="{{ asset(mix('laratrust.css', 'vendor/laratrust')) }}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+<<<<<<< HEAD
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
 
    
+=======
+>>>>>>> parent of b3212f6... Search box modification
     
 </head>
 <body>
@@ -42,9 +44,15 @@
                     <!-- Left Side Of Navbar -->
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <ul class="navbar-nav mr-auto" >
                     <form class="form-inline d-flex justify-content-center md-form form-sm active-purple active-purple-2 mt-2"  action="{{ route('search') }}" method="GET">
                     <input type="text" class="form-control form-control-sm ml-3 w-75" name="search"  placeholder="&#xF002; Search" style="font-family:Arial, FontAwesome" style="text-align:center;width:800px;height:25px; margin-top:5px; border: 1px solid #A0AEC0;">
+=======
+                    <ul class="navbar-nav mr-auto">
+                    <form class="flex" action="{{ route('search') }}" method="GET">
+                    <input type="text" class="" name="search"  placeholder="Search StratizenAsk" style="width:250px;height:30px; margin-top:20px; border: 1px solid #A0AEC0; marg">
+>>>>>>> parent of b3212f6... Search box modification
                     </form>
 =======
                     <ul class="navbar-nav mr-auto">
