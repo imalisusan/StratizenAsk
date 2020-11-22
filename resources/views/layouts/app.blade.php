@@ -41,6 +41,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <ul class="navbar-nav mr-auto" >
                     <form class="form-inline d-flex justify-content-center md-form form-sm active-purple active-purple-2 mt-2"  action="{{ route('search') }}" method="GET">
                     <input type="text" class="form-control form-control-sm ml-3 w-75" name="search"  placeholder="&#xF002; Search" style="font-family:Arial, FontAwesome" style="text-align:center;width:800px;height:25px; margin-top:5px; border: 1px solid #A0AEC0;">
@@ -49,6 +50,10 @@
                     <ul class="navbar-nav mr-auto">
 
 >>>>>>> parent of 25e1103... Merge pull request #37 from imalisusan/imali
+=======
+                    <ul class="navbar-nav mr-auto">
+
+>>>>>>> parent of a9c6b9c... 01_Debugged search functionality
                     </ul>
 
                     <!-- Right Side Of Navbar -->

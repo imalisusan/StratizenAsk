@@ -28,7 +28,11 @@ Route::resource('posts', 'PostController');
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Route::get('/search', 'HomeController@search')->name('search');
+=======
+Route::get('/search/{searchKey}', 'HomeController@search')->name('search');
+>>>>>>> parent of a9c6b9c... 01_Debugged search functionality
 
 =======
 >>>>>>> parent of 4dfb59b... 00_Laravel search functionality 01_ FAQ UI modification

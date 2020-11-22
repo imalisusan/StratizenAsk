@@ -85,9 +85,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
                     
+<<<<<<< HEAD
                     <form action="{{ route('search') }}" method="GET">
                     <input type="text" name="search" placeholder="Search StratizenAsk" style="width:600px;height:60px;margin-bottom:20px;border: 1px solid #A0AEC0;padding:20px;" class=""><br>
                     <button type="submit" class="btn btn-primary" style="background-color:#5E57D4; border: 1px solid #5E57D4;"> Search</button>
+=======
+                    <form action="{{ route('search') }}" method="post">
+                    <input type="text" placeholder="Search StratizenAsk" style="width:600px;height:60px;margin-bottom:20px;border: 1px solid #A0AEC0;" class=""><br>
+                    <input type="submit"  name="search" class="btn btn-primary" style="background-color:#5E57D4; border: 1px solid #5E57D4; ">
+>>>>>>> parent of a9c6b9c... 01_Debugged search functionality
                     </form>
                    
 =======

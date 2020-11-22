@@ -48,10 +48,9 @@ class HomeController extends Controller
 <<<<<<< HEAD
     public function search(Request $request)
     {
-        $data = $request->all();
-        $key= $data["search"];
-        $posts = Post::search($key)->paginate(20);
-        return view('home', compact('posts'))->with('i', (request()->input('page', 1) - 1) * 20);
+        $key = $request->query('searchKey');
+        $posts = Post::search($searchKey)->get();
+        return view('search', compact('posts'));
     }
 =======
 >>>>>>> parent of 4dfb59b... 00_Laravel search functionality 01_ FAQ UI modification
