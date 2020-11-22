@@ -26,10 +26,13 @@ Route::get('profile', 'HomeController@profile')->name('profile');
 Route::resource('posts', 'PostController');
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Route::get('/search', 'HomeController@search')->name('search');
 
 =======
 >>>>>>> parent of 4dfb59b... 00_Laravel search functionality 01_ FAQ UI modification
+=======
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
 Route::get('/index_admin', 'PostController@index_admin')->name('index_admin');
 
 Route::get('/update_status/{post}', 'PostController@update_status')->name('update_status');

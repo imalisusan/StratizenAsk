@@ -87,7 +87,6 @@ class PostController extends Controller
             $comment->comment = $comment->comment;
             $commentor =  User::find($comment->user_id);
             $comment->author = $commentor->name;
-            $comment->avatar = $commentor->avatar;
         }
         return view('posts.show', compact('post', 'author', 'comments'))->with('i', (request()->input('page', 1) - 1) * 5);
     }

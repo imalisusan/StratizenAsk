@@ -39,6 +39,7 @@ class HomeController extends Controller
         return view('profile', compact('posts'))->with('i', (request()->input('page', 1) - 1) * 20);
     }
     
+<<<<<<< HEAD
     public function faq()
     {
         return view('faq');
@@ -54,4 +55,6 @@ class HomeController extends Controller
 =======
 >>>>>>> parent of 4dfb59b... 00_Laravel search functionality 01_ FAQ UI modification
     
+=======
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
 }

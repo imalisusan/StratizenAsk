@@ -71,7 +71,10 @@
                                     <a class="dropdown-item" href="{{ route('home',Auth::user()->id) }}">Feed</a>
                                     <a class="dropdown-item" href="{{ route('profile',Auth::user()->id) }}">My Profile</a>
                                     <a class="dropdown-item" href="{{ route('users.edit',Auth::user()->id) }}">Edit Profile</a>
+<<<<<<< HEAD
                                     <a class="dropdown-item" href="./chat">Chat</a>
+=======
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
                                     @role('administrator')
                                     <a class="dropdown-item" href="{{ route('laratrust.roles-assignment.index') }}">Admin Panel</a>
                                     @endrole

@@ -85,7 +85,7 @@
                             <img src="{{ Storage::url('uploads/avatars/'. Auth::user()->id . '/' . Auth::user()->avatar . '') }}" class="rounded-circle pb-1 pr-1" style="height:30px;width:30px;float:left;" alt=""  onerror="this.src='uploads/avatars/avatar.png';">
                             <p style="margin-bottom:0px;"><strong> You </strong> said...</p>
                         @else
-                        <img src="{{ Storage::url('uploads/avatars/'. $comment->user_id . '/' . $comment->avatar . '') }}" class="rounded-circle pb-1 pr-1" style="height:30px;width:30px;float:left;" alt=""  onerror="this.src='uploads/avatars/avatar.png';">
+                        <img src="{{ Storage::url('uploads/avatars/'. $comment->user_id . '/' . Auth::user()->avatar . '') }}" class="rounded-circle pb-1 pr-1" style="height:30px;width:30px;float:left;" alt=""  onerror="this.src='uploads/avatars/avatar.png';">
                             <p style="margin-bottom:0px;"><strong>{{ $comment->author }} </strong> said...</p>
                         @endif
                             <p style="color: #A8A8A8; font-size:12px;margin-bottom:0px;">on {{ $comment->updated_at }}</p>

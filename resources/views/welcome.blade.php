@@ -82,6 +82,7 @@
                     @endrole
                     <div id="search" style="margin-top:40px;">
 <<<<<<< HEAD
+<<<<<<< HEAD
                     
                     <form action="{{ route('search') }}" method="GET">
                     <input type="text" name="search" placeholder="Search StratizenAsk" style="width:600px;height:60px;margin-bottom:20px;border: 1px solid #A0AEC0;padding:20px;" class=""><br>
@@ -92,6 +93,10 @@
                     <input type="text" placeholder="Search StratizenAsk" style="width:600px;height:60px;margin-bottom:20px;border: 1px solid #A0AEC0;" class=""><br>
                     <input type="submit" value="Search" class="btn btn-primary" style="background-color:#5E57D4; border: 1px solid #5E57D4; ">
 >>>>>>> parent of 4dfb59b... 00_Laravel search functionality 01_ FAQ UI modification
+=======
+                    <input type="text" placeholder="Search StratizenAsk" style="width:600px;height:60px;margin-bottom:20px;" class=""><br>
+                    <input type="submit" value="Search" class="btn btn-primary" style="background-color:#5E57D4; border: 1px solid #5E57D4;">
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
                     </div>
                     <div class="title m-b-md">
                         <div><img src="uploads/avatars/logo.png" style="height:200px;" class="pr-3" a></div>

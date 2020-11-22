@@ -4,7 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "76c832e72caa2712bf569b2f12f1674e",
+=======
+    "content-hash": "e3c153d98a433156e15ddd7b8b23825b",
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -102,6 +106,15 @@
                 "brick",
                 "math"
             ],
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/brick/math",
+                    "type": "tidelift"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-08-18T23:57:15+00:00"
         },
         {
@@ -212,6 +225,23 @@
                 "uppercase",
                 "words"
             ],
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://www.doctrine-project.org/sponsorship.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/phpdoctrine",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Finflector",
+                    "type": "tidelift"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-05-29T15:13:26+00:00"
         },
         {
@@ -274,6 +304,23 @@
                 "parser",
                 "php"
             ],
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://www.doctrine-project.org/sponsorship.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/phpdoctrine",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Flexer",
+                    "type": "tidelift"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-05-25T17:44:05+00:00"
         },
         {
@@ -507,6 +554,15 @@
                 "crossdomain",
                 "laravel"
             ],
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://github.com/barryvdh",
+                    "type": "github"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-09-07T11:48:52+00:00"
         },
         {
@@ -1150,6 +1206,35 @@
                 "md",
                 "parser"
             ],
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://enjoy.gitstore.app/repositories/thephpleague/commonmark",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.colinodell.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.paypal.me/colinpodell/10.00",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/colinodell",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/colinodell",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/league/commonmark",
+                    "type": "tidelift"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-09-13T14:44:46+00:00"
         },
         {
@@ -1235,6 +1320,15 @@
                 "sftp",
                 "storage"
             ],
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://offset.earth/frankdejonge",
+                    "type": "other"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-08-23T07:39:11+00:00"
         },
         {
@@ -1276,6 +1370,19 @@
                 }
             ],
             "description": "Mime-type detection for Flysystem",
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://github.com/frankdejonge",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/league/flysystem",
+                    "type": "tidelift"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-09-21T18:10:53+00:00"
         },
         {
@@ -1357,6 +1464,19 @@
                 "logging",
                 "psr-3"
             ],
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://github.com/Seldaek",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/monolog/monolog",
+                    "type": "tidelift"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-07-23T08:41:23+00:00"
         },
         {
@@ -1411,6 +1531,7 @@
             "time": "2020-01-05T04:49:34+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "munafio/chatify",
             "version": "v1.0.1",
             "source": {
@@ -1467,6 +1588,8 @@
             "time": "2020-09-13T11:03:52+00:00"
         },
         {
+=======
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "name": "nesbot/carbon",
             "version": "2.40.1",
             "source": {
@@ -1543,6 +1666,19 @@
                 "datetime",
                 "time"
             ],
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://opencollective.com/Carbon",
+                    "type": "open_collective"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/nesbot/carbon",
+                    "type": "tidelift"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-09-23T08:17:37+00:00"
         },
         {
@@ -1702,6 +1838,7 @@
                 "random"
             ],
             "time": "2018-07-02T15:55:56+00:00"
+<<<<<<< HEAD
         },
         {
             "name": "paragonie/sodium_compat",
@@ -1784,6 +1921,8 @@
                 "side-channel resistant"
             ],
             "time": "2020-03-20T21:48:09+00:00"
+=======
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
         },
         {
             "name": "phpoption/phpoption",
@@ -1838,6 +1977,19 @@
                 "php",
                 "type"
             ],
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://github.com/GrahamCampbell",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/phpoption/phpoption",
+                    "type": "tidelift"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-07-20T17:29:33+00:00"
         },
         {
@@ -1986,6 +2138,23 @@
                 "x.509",
                 "x509"
             ],
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://github.com/terrafrost",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/phpseclib",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/phpseclib/phpseclib",
+                    "type": "tidelift"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-09-08T04:24:43+00:00"
         },
         {
@@ -2301,6 +2470,7 @@
             "time": "2020-05-03T19:32:03+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "pusher/pusher-php-server",
             "version": "v3.4.1",
             "source": {
@@ -2355,6 +2525,8 @@
             "time": "2019-03-19T11:19:11+00:00"
         },
         {
+=======
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "name": "ralouphie/getallheaders",
             "version": "3.0.3",
             "source": {
@@ -2455,6 +2627,15 @@
                 "queue",
                 "set"
             ],
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://github.com/ramsey",
+                    "type": "github"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-09-10T20:58:17+00:00"
         },
         {
@@ -2536,6 +2717,15 @@
                 "identifier",
                 "uuid"
             ],
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://github.com/ramsey",
+                    "type": "github"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-08-18T17:17:46+00:00"
         },
         {
@@ -2601,6 +2791,15 @@
                 "rbac",
                 "roles"
             ],
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://github.com/santigarcor",
+                    "type": "github"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-09-15T13:30:03+00:00"
         },
         {
@@ -2742,6 +2941,23 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-09-18T14:27:32+00:00"
         },
         {
@@ -2795,6 +3011,23 @@
             ],
             "description": "Symfony CssSelector Component",
             "homepage": "https://symfony.com",
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-05-20T17:43:50+00:00"
         },
         {
@@ -2845,6 +3078,23 @@
             ],
             "description": "A generic function and convention to trigger deprecation notices",
             "homepage": "https://symfony.com",
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-09-07T11:33:47+00:00"
         },
         {
@@ -2902,6 +3152,23 @@
             ],
             "description": "Symfony ErrorHandler Component",
             "homepage": "https://symfony.com",
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-09-27T03:44:28+00:00"
         },
         {
@@ -2975,6 +3242,23 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-09-18T14:27:32+00:00"
         },
         {
@@ -3037,6 +3321,23 @@
                 "interoperability",
                 "standards"
             ],
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-09-07T11:33:47+00:00"
         },
         {
@@ -3086,6 +3387,23 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-09-02T16:23:27+00:00"
         },
         {
@@ -3147,6 +3465,23 @@
                 "interoperability",
                 "standards"
             ],
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-09-07T11:33:47+00:00"
         },
         {
@@ -3208,6 +3543,23 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "https://symfony.com",
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-09-13T05:01:27+00:00"
         },
         {
@@ -3308,6 +3660,23 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "https://symfony.com",
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-09-27T04:33:19+00:00"
         },
         {
@@ -3371,6 +3740,23 @@
                 "mime",
                 "mime-type"
             ],
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-09-02T16:23:27+00:00"
         },
         {
@@ -3433,6 +3819,23 @@
                 "polyfill",
                 "portable"
             ],
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-07-14T12:35:20+00:00"
         },
         {
@@ -3496,6 +3899,23 @@
                 "portable",
                 "shim"
             ],
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-07-14T12:35:20+00:00"
         },
         {
@@ -3560,6 +3980,23 @@
                 "portable",
                 "shim"
             ],
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-07-14T12:35:20+00:00"
         },
         {
@@ -3631,6 +4068,23 @@
                 "portable",
                 "shim"
             ],
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-08-04T06:02:08+00:00"
         },
         {
@@ -3698,6 +4152,23 @@
                 "portable",
                 "shim"
             ],
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-07-14T12:35:20+00:00"
         },
         {
@@ -3761,6 +4232,23 @@
                 "portable",
                 "shim"
             ],
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-07-14T12:35:20+00:00"
         },
         {
@@ -3785,6 +4273,8 @@
             "extra": {
                 "branch-alias": {
                     "dev-master": "1.18-dev"
+<<<<<<< HEAD
+=======
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -3824,6 +4314,53 @@
                 "portable",
                 "shim"
             ],
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php70\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ],
+                "classmap": [
+                    "Resources/stubs"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+<<<<<<< HEAD
+            "description": "Symfony polyfill backporting some PHP 7.0+ features to lower PHP versions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+=======
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-07-14T12:35:20+00:00"
         },
         {
@@ -3883,6 +4420,23 @@
                 "portable",
                 "shim"
             ],
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-07-14T12:35:20+00:00"
         },
         {
@@ -3945,6 +4499,23 @@
                 "portable",
                 "shim"
             ],
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-07-14T12:35:20+00:00"
         },
         {
@@ -4011,6 +4582,23 @@
                 "portable",
                 "shim"
             ],
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-07-14T12:35:20+00:00"
         },
         {
@@ -4061,6 +4649,23 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-09-02T16:23:27+00:00"
         },
         {
@@ -4139,6 +4744,23 @@
                 "uri",
                 "url"
             ],
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-09-02T16:23:27+00:00"
         },
         {
@@ -4201,6 +4823,23 @@
                 "interoperability",
                 "standards"
             ],
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-09-07T11:33:47+00:00"
         },
         {
@@ -4272,6 +4911,23 @@
                 "utf-8",
                 "utf8"
             ],
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-09-15T12:23:47+00:00"
         },
         {
@@ -4350,6 +5006,23 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "https://symfony.com",
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-09-27T03:44:28+00:00"
         },
         {
@@ -4411,6 +5084,23 @@
                 "interoperability",
                 "standards"
             ],
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-09-07T11:33:47+00:00"
         },
         {
@@ -4487,6 +5177,23 @@
                 "debug",
                 "dump"
             ],
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-09-18T14:27:32+00:00"
         },
         {
@@ -4600,6 +5307,19 @@
                 "env",
                 "environment"
             ],
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://github.com/GrahamCampbell",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/vlucas/phpdotenv",
+                    "type": "tidelift"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-07-14T19:22:52+00:00"
         },
         {
@@ -4648,6 +5368,31 @@
                 "clean",
                 "php"
             ],
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://www.paypal.me/moelleken",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/voku",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/portable-ascii",
+                    "type": "open_collective"
+                },
+                {
+                    "url": "https://www.patreon.com/voku",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/voku/portable-ascii",
+                    "type": "tidelift"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-07-22T23:32:04+00:00"
         }
     ],
@@ -4706,6 +5451,23 @@
                 "constructor",
                 "instantiate"
             ],
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://www.doctrine-project.org/sponsorship.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/phpdoctrine",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Finstantiator",
+                    "type": "tidelift"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-05-29T17:27:14+00:00"
         },
         {
@@ -4761,6 +5523,15 @@
                 "flare",
                 "reporting"
             ],
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-09-18T06:35:11+00:00"
         },
         {
@@ -5153,6 +5924,15 @@
                 "object",
                 "object graph"
             ],
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/myclabs/deep-copy",
+                    "type": "tidelift"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-06-29T13:22:24+00:00"
         },
         {
@@ -5223,6 +6003,23 @@
                 "php",
                 "symfony"
             ],
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=66BYDWAT92N6L",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/nunomaduro",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/nunomaduro",
+                    "type": "patreon"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-04-04T19:56:08+00:00"
         },
         {
@@ -5870,6 +6667,73 @@
                 "testing",
                 "xunit"
             ],
+<<<<<<< HEAD
+            "time": "2020-06-22T07:06:58+00:00"
+        },
+        {
+            "name": "scrivo/highlight.php",
+            "version": "v9.18.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/scrivo/highlight.php.git",
+                "reference": "efb6e445494a9458aa59b0af5edfa4bdcc6809d9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/scrivo/highlight.php/zipball/efb6e445494a9458aa59b0af5edfa4bdcc6809d9",
+                "reference": "efb6e445494a9458aa59b0af5edfa4bdcc6809d9",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8|^5.7",
+                "sabberworm/php-css-parser": "^8.3",
+                "symfony/finder": "^2.8|^3.4",
+                "symfony/var-dumper": "^2.8|^3.4"
+            },
+            "suggest": {
+                "ext-dom": "Needed to make use of the features in the utilities namespace"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Highlight\\": "",
+                    "HighlightUtilities\\": ""
+                },
+                "files": [
+                    "HighlightUtilities/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Geert Bergman",
+                    "homepage": "http://www.scrivo.org/",
+                    "role": "Project Author"
+                },
+=======
+            "funding": [
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
+                {
+                    "name": "Vladimir Jimenez",
+                    "homepage": "https://allejo.io",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Martin Folkers",
+                    "homepage": "https://twobrain.io",
+                    "role": "Contributor"
+                }
+            ],
+<<<<<<< HEAD
+=======
             "time": "2020-06-22T07:06:58+00:00"
         },
         {
@@ -5931,6 +6795,7 @@
                     "role": "Contributor"
                 }
             ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "description": "Server side syntax highlighter that supports 185 languages. It's a PHP port of highlight.js",
             "keywords": [
                 "code",
@@ -5939,6 +6804,15 @@
                 "highlight.php",
                 "syntax"
             ],
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://github.com/allejo",
+                    "type": "github"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-08-27T03:24:44+00:00"
         },
         {
@@ -6594,6 +7468,15 @@
                 }
             ],
             "description": "A small library for converting tokenized PHP source code into XML and potentially other formats",
+<<<<<<< HEAD
+=======
+            "funding": [
+                {
+                    "url": "https://github.com/theseer",
+                    "type": "github"
+                }
+            ],
+>>>>>>> parent of 49f973d... Merge pull request #36 from imalisusan/Whitneycommits
             "time": "2020-07-12T23:59:07+00:00"
         },
         {
