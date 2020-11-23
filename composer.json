@@ -19,6 +19,7 @@
         "laravel/tinker": "^2.0",
         "laravel/ui": "^2.4",
         "munafio/chatify": "^1.0",
+        "phpseclib/bcmath_compat": "1.0.4",
         "santigarcor/laratrust": "^6.2"
     },
     "require-dev": {
