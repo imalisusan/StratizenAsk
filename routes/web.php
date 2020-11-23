@@ -45,6 +45,6 @@ Route::resource('comments', 'CommentController');
 
 Route::resource('tags', 'TagController'); 
 
-Route::get('/search', 'TagController@search')->name('tagsearch');
+Route::get('/searchtag', 'TagController@search')->name('tagsearch');
 
 Route::get('/tags/{tag}','TagController@show')->name('show'); 
