@@ -49,7 +49,7 @@
                         <a href="{{ route('posts.index') }}" class="card-link" style="color: #4B94FD;">Back</a>
                     @else
                         @if (Auth::user()->id == $author->id)
-                            <form action="{{ route('posts.destroy',$post->id) }}" method="POST">
+                            <form action="{{ route('posts.destroy',$post->id) }}" method="POST" onsubmit="return confirm('Are you sure you want to delete the post?');">
                                 <a class="card-link" href="{{ route('posts.edit',$post->id) }}"style="color: #4B94FD;">Edit</a>
                                     @csrf
                                     @method('DELETE')
@@ -102,7 +102,7 @@
                             <p style="color: #A8A8A8; font-size:12px;margin-bottom:0px;">on {{ $comment->updated_at }}</p>
                             <p style="margin-bottom:0px;">{{ $comment->comment }}</p><br>   
                             @if (Auth::user()->id == $comment->user_id)
-                                    <form action="{{ route('comments.destroy',$comment->id) }}" method="POST">
+                                    <form action="{{ route('comments.destroy',$comment->id) }}" method="POST" onsubmit="return confirm('Are you sure you want to delete the course?');">
                                     <a class="card-link" href="{{ route('comments.edit',$comment->id) }}"style="color: #4B94FD;">Edit</a>
                                     @csrf
                                     @method('DELETE')
