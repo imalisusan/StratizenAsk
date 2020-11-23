@@ -51,6 +51,19 @@
                         </select><br>
                 </div>  
         </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group" id="myDropdown">
+                <strong>Tags:</strong>
+                <select multiple  name ="tags[]" id="tags" class="form-control mdb-select md-form" searchable="Search here..">
+                    <option disabled selected>Select Tag</option>
+                    @foreach($tags as $tag)
+                        <option value={{$tag->id}}>
+                            {{ $tag->name }}
+                        </option>
+                    @endforeach
+                </select><br> 
+            </div>
+        </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
               <button type="submit" class="btn btn-primary">Submit</button>
             </div>
