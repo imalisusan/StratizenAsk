@@ -19,7 +19,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '4fe122c21bfdf7d90309e6b02648494a7be69c61',
+    'reference' => '8ee8df1d7f50724908d63e685615e61eb5f9ea88',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -453,7 +453,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '4fe122c21bfdf7d90309e6b02648494a7be69c61',
+      'reference' => '8ee8df1d7f50724908d63e685615e61eb5f9ea88',
     ),
     'laravel/scout' => 
     array (
@@ -677,12 +677,12 @@ private static $installed = array (
     ),
     'phpseclib/bcmath_compat' => 
     array (
-      'pretty_version' => '1.0.5',
-      'version' => '1.0.5.0',
+      'pretty_version' => '1.0.4',
+      'version' => '1.0.4.0',
       'aliases' => 
       array (
       ),
-      'reference' => '89cbb63742a32730b7187773a60b6b12b9db4479',
+      'reference' => 'f805922db4b3d8c1e174dafb74ac7374264e8880',
     ),
     'phpseclib/phpseclib' => 
     array (
