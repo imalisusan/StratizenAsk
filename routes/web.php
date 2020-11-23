@@ -42,3 +42,9 @@ Route::get('/faq', 'HomeController@faq')->name('faq');
 Route::get('/comments/{post_id}', 'CommentController@store')->name('comments_store');
 
 Route::resource('comments', 'CommentController');
+
+Route::resource('tags', 'TagController'); 
+
+Route::get('/search', 'TagController@search')->name('tagsearch');
+
+Route::get('/tags/{tag}','TagController@show')->name('show'); 
