@@ -10,7 +10,7 @@
     @foreach ($posts as $post)
         <div class="card" style="width: 100%;">
                 <div class="card-body">
-                    <h5 class="font-weight-bold mb-3">Title: {{ $post->title }}</h5>
+                <h5> <a href="{{ route('posts.show',$post->id) }}"class="font-weight-bold mb-3"> Title: {{ $post->title }}</a> </h5>
                     <p class="mb-0">Description: {{ $post->detail }}</p>
                     <p class="mb-0">Category: {{ $post->category }}</p>
                     <p class="mb-0">Published on: {{ $post->created_at }}</p>

@@ -6,7 +6,7 @@ use App\Post;
 use App\User;
 use App\Course;
 use App\Comment;
-
+use App\Tag;
 use Illuminate\Http\Request;
 use App\Http\Requests\StorePostRequest;
 use Carbon\Carbon;
@@ -47,7 +47,8 @@ class PostController extends Controller
         foreach ($courses as $course) {
             $course->description = $course->name;
         }
-        return view('posts.create', compact('courses'));
+        $tags =  Tag::get();
+        return view('posts.create', compact('courses', 'tags'));
     }
 
     /**
@@ -68,6 +69,11 @@ class PostController extends Controller
         $post->user_id = $request->user()->id;
         // End Attach post to user
         $post->save();
+        
+        //for the pivot table
+        $tags=array();
+        $tags= $request->input('tags');// arrays of role ids
+        $post->tags()->attach($tags);
 
         return redirect()->route('posts.index')->with('success', 'Post created successfully. It will be reviewed and published in no time.');
     }
@@ -104,7 +110,8 @@ class PostController extends Controller
         foreach ($courses as $course) {
             $course->description = $course->name;
         }
-        return view('posts.edit', compact('post'), compact('courses'));
+        $tags =  Tag::get();
+        return view('posts.edit', compact('post'), compact('courses', 'tags'));
     }
 
     /**

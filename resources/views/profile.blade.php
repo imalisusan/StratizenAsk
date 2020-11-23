@@ -20,7 +20,6 @@
                     <div class="pr-5">Student</div>
                 @endif
                 <div class="pr-5"><strong class="pr-1">{{ Auth::user()->posts->count() }}</strong>posts</div>
-                <div><strong class="pr-1">200</strong>friends</div>
             </div>
             <div class="pt-2 font-weight-bold">Course: {{ Auth::user()->course }}</div>
             <div>About: {{ Auth::user()->about }}</div>
@@ -34,7 +33,7 @@
             <div class="col-4">
                 <div class="card" style="width: 100%;">
                     <div class="card-body">
-                        <h5 class="font-weight-bold mb-3">Title: {{ $post->title }}</h5>
+                    <h5> <a href="{{ route('posts.show',$post->id) }}"class="font-weight-bold mb-3"> Title: {{ $post->title }}</a> </h5>
                         <p class="mb-0">Description: {{ $post->detail }}</p>
                         <p class="mb-0">Category: {{ $post->category }}</p>
                         <p class="mb-0">Status: {{ $post->status }}</p>
@@ -42,9 +41,6 @@
                     <div class="card-body">
                         <a href="{{ route('posts.show',$post->id) }}" class="card-link">View</a>
                         <a class="card-link" href="{{ route('posts.edit',$post->id) }}">Edit</a>
-                        @csrf
-                        @method('DELETE')
-                        <button type="submit" class="btn card-link" style="color: #4B94FD;">Delete</button>
                     </div>
                 </div><br>
             </div>
